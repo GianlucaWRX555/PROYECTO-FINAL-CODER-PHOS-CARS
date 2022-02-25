@@ -1,3 +1,143 @@
 .article{
     grid-area: article;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+
+
+
+    .muestraVehiculosIndex{
+        
+    }
+
+    // 2 parte - seccionesIndex-------------------------------------------
+    .seccionesIndex{
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+        grid-template-rows: auto 1fr 1fr;
+        row-gap: 20px;
+        grid-template-areas: 
+        ". tituloSeccionesIndex tituloSeccionesIndex ."
+        ". secciones1 secciones1 ."
+        ". secciones2 secciones2 ."
+        ;
+
+        .tituloSeccionesIndex{
+            grid-area: tituloSeccionesIndex;
+            margin: 0 auto;
+
+            p{
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 4rem;
+            }
+        }
+
+        .secciones1{
+            grid-area: secciones1;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 20px;
+            grid-template-areas: 
+            "seccionesVehiculos seccionesPosventa"
+            ;
+
+            .seccionesVehiculos{
+                background-color: crimson;
+                grid-area: seccionesVehiculos;
+                background-image: url(../images/seccionVehiculos.png);
+                background-position: center;
+                background-size: contain;
+                height: 450px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+                p{
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 3rem;
+                }
+            }
+
+            .seccionesPosventa{
+                background-color: royalblue;
+                grid-area: seccionesPosventa;
+                background-image: url(../images/seccionVehiculos.png);
+                background-position: center;
+                background-size: contain;
+                height: 450px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+                p{
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .secciones2{
+            grid-area: secciones2;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 20px;
+            grid-template-areas: 
+            "seccionesSobreNosotros seccionesContacto"
+            ;
+
+            .seccionesSobreNosotros{
+                background-color: dimgray;
+                grid-area: seccionesSobreNosotros;
+                background-image: url(../images/seccionVehiculos.png);
+                background-position: center;
+                background-size: contain;
+                height: 450px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+                p{
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 3rem;
+                }
+            }
+
+            .seccionesContacto{
+                background-color: darkgreen;
+                grid-area: seccionesContacto;
+                background-image: url(../images/seccionVehiculos.png);
+                background-position: center;
+                background-size: contain;
+                height: 450px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+                p{
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+        // 2 parte - seccionesIndex-------------------------------------------
 }
