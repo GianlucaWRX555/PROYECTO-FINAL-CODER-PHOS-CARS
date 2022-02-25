@@ -1,19 +1,25 @@
 .article{
     grid-area: article;
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 1fr 1fr 0.25fr 0.25fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    ". . muestraVehiculosIndex muestraVehiculosIndex . ."
+    ". . seccionesIndex seccionesIndex . ."
+    "estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex"
+    "opinionesIndex opinionesIndex opinionesIndex opinionesIndex opinionesIndex opinionesIndex"
+    ". infoIndex infoIndex infoIndex infoIndex ."
+    ;
 
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-
-
-
-
+    // 1 parte - muestraVehiculosIndex-------------------------------------------
     .muestraVehiculosIndex{
-        
+        grid-area: muestraVehiculosIndex;
     }
+    // 1 parte - muestraVehiculosIndex-------------------------------------------
 
     // 2 parte - seccionesIndex-------------------------------------------
     .seccionesIndex{
+        grid-area: seccionesIndex;
         display: grid;
         grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
         grid-template-rows: auto 1fr 1fr;
@@ -139,5 +145,147 @@
             }
         }
     }
-        // 2 parte - seccionesIndex-------------------------------------------
+    // 2 parte - seccionesIndex-------------------------------------------
+
+    // 3 parte - EstadisticaIndex-----------------------------------------
+    .estadisticasIndex{
+        grid-area: estadisticasIndex;
+        background-color: $azul;
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        ". tituloEstadisticaIndex tituloEstadisticaIndex tituloEstadisticaIndex tituloEstadisticaIndex ."
+        ". itemsEstadisticas itemsEstadisticas itemsEstadisticas itemsEstadisticas ."
+        
+        ;
+
+        .tituloEstadisticaIndex{
+            grid-area: tituloEstadisticaIndex;
+            display: flex;
+            justify-content: center;
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 3rem;
+                padding-top: 20px;
+            }
+
+        }
+
+        .itemsEstadisticas{
+            grid-area: itemsEstadisticas;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 30px;
+            grid-template-areas: 
+            "datoEstadistica1 datoEstadistica2 datoEstadistica3 datoEstadistica4"
+            ;
+
+
+            .datoEstadistica1{
+                grid-area: datoEstadistica1;
+                border: 2px solid $naranja;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .fa-car{
+                    color: $naranja;
+                    font-size: 3rem;
+                }
+
+                p{
+                    color: $naranja;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 2rem;
+                }
+            }
+
+            .datoEstadistica2{
+                border: 2px solid $naranja;
+                grid-area: datoEstadistica2;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .fa-chart-line{
+                    color: $naranja;
+                    font-size: 3rem;
+                }
+
+                p{
+                    color: $naranja;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 2rem;
+                }
+            }
+            
+            .datoEstadistica3{
+                border: 2px solid $naranja;
+                grid-area: datoEstadistica3;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .fa-face-grin-stars{
+                    color: $naranja;
+                    font-size: 3rem;
+                }
+
+                p{
+                    color: $naranja;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 2rem;
+                }
+            }
+
+            .datoEstadistica4{
+                border: 2px solid $naranja;
+                grid-area: datoEstadistica4;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .fa-calendar-check{
+                    color: $naranja;
+                    font-size: 3rem;
+                }
+
+                p{
+                    color: $naranja;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    // 3 parte - EstadisticaIndex-----------------------------------------
+
+    // 4 parte - opinionesIndex-------------------------------------------
+    .opinionesIndex{
+        grid-area: opinionesIndex;
+    }
+    // 4 parte - opinionesIndex-------------------------------------------
+
+    // 5 parte - infoIndex-------------------------------------------
+    .infoIndex{
+        grid-area: infoIndex;
+    }
+    // 5 parte - infoIndex-------------------------------------------
 }
