@@ -10,6 +10,98 @@
         border-bottom: $naranja 2px solid;
         position: absolute;
 
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            transition: all ease 0.15s;
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    color: $azul;
+                    padding: 15px 20px;
+                    transition: all ease 0.15s;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 1px;
+                    font-size: 1.25rem;
+
+                    &:hover{
+                        border-bottom: 5px $naranja solid;
+                        color: $naranja;
+                    }
+                }
+            }
+        }
+
+        .headerInfo{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            
+            .fas{
+                color: $naranja;
+                font-size: 20px;
+            }
+        }
         
+    }
+
+    .headerImagen{
+        height: 100%;
+        background-image: url(../images/background_imageSEO.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .textoHeaderIndex{
+            color: white;
+            width: 30%;
+            height: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            position: relative;
+            top: 20%;
+            left: 10%;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 3px;
+
+            p{
+                font-size: 1.75rem;
+            }
+
+            a{
+                height: 10%;
+                width: 45%;
+                
+                button{
+                    height: 100%;
+                    width: 100%;
+                    background-color: $phos1;
+                    border: none;
+                    color: $azul;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    letter-spacing: 3px;
+                    font-family: 'Staatliches', cursive;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer ;
+                    &:hover{
+                        background-color: $naranja;
+                    }
+                }
+            }
+
+            .tituloTextoHeaderIndex{
+                p{
+                    font-size: 7rem;
+                }
+            }
+        }
     }
 }
