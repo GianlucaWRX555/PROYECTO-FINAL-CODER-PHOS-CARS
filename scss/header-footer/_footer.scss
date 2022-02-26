@@ -1,3 +1,83 @@
 .footer{
     grid-area: footer;
+    background-color: $naranja;
+    color: $azul;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .iconosRedes{
+        height: 75px;
+        display: flex;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            padding: 0 15px;
+            .fa-brands{
+                color: $azul;
+                font-size: 2.5rem;
+            }
+
+            &:hover .fa-brands{
+                color: $phos1;
+            }
+        }
+    }
+
+    .barraColor{
+        background-color: $azul;
+        height: 7.5px;
+        width: 100%;
+    }
+
+    .enlaces{
+
+        li{
+            list-style: none;
+            text-align: center;
+            padding: 10px 0;
+
+            a{
+                text-decoration: none;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 1.5rem;
+                color: $azul;
+
+                &:hover{
+                    color: $phos1;
+                }
+            }
+
+
+            @media(max-width:425px){
+                list-style: none;
+                padding: 0 18px;
+            }
+            @media(max-width:375px){
+                list-style: none;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+
+        p{
+            background-color: $azul;
+            color: $phos1;
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        @media(max-width:320px){
+            text-align: center;
+        }
+    }
+    
 }
