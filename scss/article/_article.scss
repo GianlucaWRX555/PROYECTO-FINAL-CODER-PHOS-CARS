@@ -69,6 +69,7 @@
                     font-family: 'Staatliches', cursive;
                     letter-spacing: 2px;
                     font-size: 3rem;
+                    color: $azul;
                 }
             }
 
@@ -89,6 +90,7 @@
                     font-family: 'Staatliches', cursive;
                     letter-spacing: 2px;
                     font-size: 3rem;
+                    color: $azul;
                 }
             }
         }
@@ -121,6 +123,7 @@
                     font-family: 'Staatliches', cursive;
                     letter-spacing: 2px;
                     font-size: 3rem;
+                    color: $azul;
                 }
             }
 
@@ -141,6 +144,7 @@
                     font-family: 'Staatliches', cursive;
                     letter-spacing: 2px;
                     font-size: 3rem;
+                    color: $azul;
                 }
             }
         }
@@ -280,6 +284,88 @@
     // 4 parte - opinionesIndex-------------------------------------------
     .opinionesIndex{
         grid-area: opinionesIndex;
+        background-color: aquamarine;
+
+        display: grid;
+        grid-template-columns: 0.75fr 1fr 1fr 1fr 0.75fr;
+        column-gap: 70px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". contenedorOpinionesIndex1 contenedorOpinionesIndex2 contenedorOpinionesIndex3 ."
+        ;
+        align-items: center;
+
+        background-image: url(../images/opinionesBackground.jpg);
+        background-position: center;
+        background-size: cover;
+
+
+        .contenedorOpinionesIndex1{
+            grid-area: contenedorOpinionesIndex1 ;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .estrellas{
+                color: $naranja;
+                font-size: 2rem;
+            }
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 1.15rem;
+                text-align: center;
+            }
+        }
+
+        .contenedorOpinionesIndex2{
+            grid-area: contenedorOpinionesIndex2 ;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .estrellas{
+                color: $naranja;
+                font-size: 2rem;
+            }
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 1.15rem;
+                text-align: center;
+            }
+        }
+
+        .contenedorOpinionesIndex3{
+            grid-area: contenedorOpinionesIndex3 ;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .estrellas{
+                color: $naranja;
+                font-size: 2rem;
+            }
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 1.15rem;
+                text-align: center;
+            }
+        }
+        
     }
     // 4 parte - opinionesIndex-------------------------------------------
 
