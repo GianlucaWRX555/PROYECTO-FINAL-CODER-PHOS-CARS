@@ -17,6 +17,10 @@
             li{
                 list-style: none;
 
+                .nav-link{
+                    color: $azul;
+                }
+
                 a{
                     text-decoration: none;
                     color: $azul;
@@ -49,6 +53,10 @@
             }
         }
         
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+
     }
 
     .headerImagen{

@@ -14,7 +14,80 @@
 
     // 1 parte - muestraVehiculosIndex-------------------------------------------
     .muestraVehiculosIndex{
+        background-color: $azul;
         grid-area: muestraVehiculosIndex;
+
+        text-align: center;
+
+        .tituloMuestraVehiculosIndex{
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 3rem;
+                padding-top: 20px;
+            }
+        }
+
+        .contenedorAuto1{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
+
+        .contenedorAuto2{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
+
+        .contenedorAuto3{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
+
+        .contenedorAuto4{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
+
+        .contenedorAuto5{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
+
+        .contenedorAuto6{
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 2rem;
+            }
+        }
     }
     // 1 parte - muestraVehiculosIndex-------------------------------------------
 
