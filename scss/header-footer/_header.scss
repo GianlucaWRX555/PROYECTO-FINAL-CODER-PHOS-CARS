@@ -19,6 +19,11 @@
 
                 .nav-link{
                     color: $azul;
+                    display: inline!important;
+
+                    @media (min-width: 768px){
+                        padding: 15px 20px;
+                    }
                 }
 
                 a{
@@ -34,7 +39,21 @@
                         border-bottom: 5px $naranja solid;
                         color: $naranja;
                     }
+
+                    @media(max-width:767px){
+                        font-size: 2rem;
+                    }
                 }
+
+                @media(max-width:767px){
+                       padding: 20px 0; 
+                }
+            }
+        }
+
+        @media(max-width:767px){
+            .navbar-nav{
+                align-items: center;
             }
         }
 
@@ -52,11 +71,32 @@
                 font-size: 20px;
             }
         }
+
+        @media(max-width:950px){
+            .disabled{
+                display: none;
+            }
+        }
         
         .navbar-collapse {
             flex-grow: 0;
         }
 
+
+        @media(max-width:767px){
+            .navbar-collapse{
+                background-color: #31fac8;
+                z-index: 2;
+            }
+        }
+
+        @media(max-width:425px){
+            z-index: 1;
+        }
+
+        .navbar-toggler {
+            background-color: $phos1;
+        }
     }
 
     .headerImagen{
@@ -81,6 +121,14 @@
 
             p{
                 font-size: 1.75rem;
+
+                @media(max-width:767px){
+                    font-size: 1.5rem;
+                }
+
+                @media(max-width:424px){
+                    font-size: 1.25rem;
+                }
             }
 
             a{
@@ -102,13 +150,75 @@
                     &:hover{
                         background-color: $naranja;
                     }
+
+                    @media(max-width:424px){
+                        font-size: 1.25rem;
+                    }
                 }
             }
 
             .tituloTextoHeaderIndex{
                 p{
                     font-size: 7rem;
+
+                    @media(max-width:1440px){
+                        font-size: 6rem;
+                    }
+
+                    @media(max-width:767px){
+                        font-size: 4rem;
+                    }
+
+                    @media(max-width:424px){
+                        font-size: 3.75rem;
+                    }
                 }
+
+                .legendario{
+                    color: $phos1;
+                }
+            }
+
+            @media(max-width:1440px){
+                width: 35%;
+                height: 75%;
+            }
+
+            @media(max-width:1050px){
+                width: 45%;
+                height: 75%;
+            }
+
+            @media(max-width:865px){
+                width: 80%;
+                height: 75%;
+            }
+
+            @media(max-width:424px){
+                left: 5%;
+                width: 90%;
+                height: 75%;
+            }
+
+            @media(max-width:340px){
+                left: 2%;
+                width: 96%;
+                height: 75%;
+            }
+        }
+
+        @media(max-width:425px){
+            background-image: url(../images/phoneBackground.jpg);
+            position: relative;
+
+            &:before {
+                content:'';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
             }
         }
     }
