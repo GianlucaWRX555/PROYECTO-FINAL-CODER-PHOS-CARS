@@ -4,9 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Estilo Propio -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#fc4c02">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/902822c0ea.js" crossorigin="anonymous"></script>
     <title>Phos Cars | CONTACTO</title>
 </head>
 <body>
-    
+    <div class="contenedorGridContacto">
+        <!-- HEADER -->
+        <header class="headerContacto">
+            <!-- Header Principal -->
+            <div class="headerPrincipal navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="../index.html"><img src="../images/LogoPhosCars2.png" alt="Phos Cars Logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vehiuclos.html">VEHICULOS</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="./posventa.html">POSVENTA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerInfo disabled">
+                        <div class="infoCelular">
+                            <i class="fas fa-phone"></i> 
+                            +351 123-4567
+                        </div>
+                        <div class="infoLugar">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Núremberg - Alemania
+                        </div>
+                </div>
+            </div>
+            <!-- Header Principal -->
+            <!-- Header Imagen -->
+            <div class="headerImagen">
+                <div class="textoHeaderIndex">
+                    <div class="tituloTextoHeaderIndex">
+                        <p>VENÍ</p>
+                        <p>A DESCUBRIR</p>
+                        <p class="legendario">TU PROXIMO VEHICULO</p>
+                    </div>
+                    <p>EN <span style="color:#31fac8;">PHOS CARS</span> TE ESPERA TU SIGUIENTE VEHICULO, VENI A DESCUBRIRLO</p>
+                    <a href="#contact"><button>CONTACTAR</button></a>
+                </div>
+            </div>
+            <!-- Header Imagen -->
+        </header>
+        <!-- HEADER -->
+        <!-- HEADER-SECUNADARIO -->
+        <div id="contact" class="headerSec">
+            <a href="./index.html" class="bienvenidos">BIENVENIDOS | Phos Cars</a>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./vehiuclos.html">VEHICULOS</a></li>
+                <li><a href="./posventa.html">POSVENTA</a></li>
+                <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a></li>
+            </ul>
+        </div>
+        <!-- HEADER-SECUNADARIO -->
+        <!-- CONTACTO -->
+        <div class="contacto">
+            <!-- Formulario de Contacto -->
+            <div class="container contenedorFormulario my-5 d-flex">
+                <form class="w-75 p-3 colorLetra">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">No compartiremos este dato con NADIE</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Verificacion</label>
+                    </div>
+                    <button type="submit" class="btn colorBoton ancho">Contactar !</button>
+                </form>
+                <div class="barraNaranja w-25 d-flex flex-column justify-content-evenly text-center">
+                    <p class="info">INFO</p>
+                    <div>
+                        <i class="fas fa-envelope azul"></i>
+                        <p class="correo" >gianlucadc231@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone azul"></i>
+                        <p>+54 9 351 123-4567</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt azul"></i>
+                        <p>Núremberg - Alemania</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-clock azul"></i>
+                        <p>09:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center textoMapa">
+                <p class="tituloMapa">Encuentranos en Google Maps</p>
+                <p>PODES ENCONTRARNOS EN <span style="color:#fc4e03;">GOOGLE MAPS</span>, ESTAMOS SIEMPRE A DISPOSICION DE NUESTROS CLIENTES</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166051.50064746625!2d10.99295526501149!3d49.43623222397576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57aeb5b61cd3%3A0xdd5daf85a98c21b7!2sN%C3%BAremberg%2C%20Alemania!5e0!3m2!1ses!2sar!4v1643729900407!5m2!1ses!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <!-- Mapa Ubicacion -->
+        </div>
+        <!-- CONTACTO -->
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="iconosRedes">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="barraColor"></div>
+            <div class="enlaces">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./vehiuclos.html">VEHICULOS</a></li>
+                <li><a href="./posventa.html">POSVENTA</a></li>
+                <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a></li>
+            </div>
+            <div class="copyright"><p>2022 Copyright: Gianluca Del Castaño / PhosCars</p></div>
+        </footer>
+        <!-- FOOTER -->
+
+
+    </div>
+
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

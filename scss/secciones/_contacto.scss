@@ -1,0 +1,111 @@
+.contacto{
+    grid-area: contacto;
+
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    
+    .contenedorFormulario{
+        background-color: $azul;
+
+        .colorLetra{
+            color: $naranja;
+            font-size: 1.25rem;
+
+            .colorBoton{
+                background-color: $naranja;
+                transition: all ease 0.3s;
+
+                &:hover{
+                    background-color: $phos1;
+                }
+            }
+
+            button{
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(max-width:730px){
+            flex-direction: column;
+        }
+    }
+
+    .barraNaranja{
+        background-color: $naranja;
+        font-size: 1.25rem;
+        color: $azul;
+
+        .info{
+            @media(max-width:730px){
+                font-size: 2.5rem;
+            }
+        }
+
+        .correo{
+            @media(max-width:1439px){
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+
+            @media(max-width:1100px){
+                font-size: 1rem;
+                letter-spacing: 0px;
+            }
+
+            @media(max-width:1024px){
+                font-size: 1.25rem;
+                letter-spacing: 1px;
+            }
+
+            @media(max-width:900px){
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+
+            @media(max-width:730px){
+                font-size: 1.75rem;
+            }
+        }
+
+        @media(max-width:730px){
+            font-size: 1.75rem;
+        }
+    }
+
+    .textoMapa{
+        font-size: 1.5rem;
+
+        .tituloMapa{
+            font-size: 3rem;
+        }
+    }
+
+
+    @media(min-width:767px){
+        .container{
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 576px){
+        .container, .container-sm {
+            max-width: 100%;
+        }
+    }
+
+    @media(max-width:730px){
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .w-75 {
+            width: 100%!important;
+        }
+
+        .w-25 {
+            width: 100%!important;
+        }
+    }
+
+}
