@@ -1,0 +1,25 @@
+.contenedorGridSobreNosotros{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 100vh 75px auto auto;
+    grid-template-areas: 
+    "headerSobreNosotros headerSobreNosotros headerSobreNosotros"
+    "headerSec headerSec headerSec"
+    ". sobreNosotros ."
+    "footer footer footer"
+    ;
+
+    @media(max-width:1440px){
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+    }
+
+    @media(max-width:950px){
+        grid-template-areas: 
+    "headerSobreNosotros headerSobreNosotros headerSobreNosotros"
+    "headerSec headerSec headerSec"
+    "sobreNosotros sobreNosotros sobreNosotros"
+    "footer footer footer"
+    ;
+    }
+
+}

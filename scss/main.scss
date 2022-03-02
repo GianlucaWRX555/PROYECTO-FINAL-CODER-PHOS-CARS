@@ -23,6 +23,7 @@ ol, ul {
 //Variables
 @import './variables/colores';
 @import './variables/botones';
+@import './variables/body';
 
 
 //Importaciones
@@ -33,12 +34,19 @@ ol, ul {
 @import './secciones/article';
 @import './header-footer/footer';
 
-//Contacto
-@import './grid/gridContacto';
-@import './secciones/contacto';
-@import './header-footer/headerContacto';
+//Vehiculos
 
 //Posventa
 @import './grid/gridPosventa';
 @import './header-footer/headerPosventa';
 @import './secciones/posventa';
+
+//Sobre Nosotros
+@import './grid/gridSobreNosotros';
+@import './header-footer/headerSobreNosotros';
+@import './secciones/sobreNosotros';
+
+//Contacto
+@import './grid/gridContacto';
+@import './secciones/contacto';
+@import './header-footer/headerContacto';
