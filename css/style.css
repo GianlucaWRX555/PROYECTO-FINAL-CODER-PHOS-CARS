@@ -39,11 +39,17 @@ ol, ul {
       .header .headerPrincipal ul li {
         list-style: none; }
         .header .headerPrincipal ul li .nav-link {
-          color: #1f2a44;
-          display: inline !important; }
+          color: white;
+          display: inline !important;
+          transition: all ease 0.15s; }
           @media (min-width: 768px) {
             .header .headerPrincipal ul li .nav-link {
               padding: 15px 20px; } }
+          .header .headerPrincipal ul li .nav-link:hover {
+            color: #31fac8; }
+            @media (max-width: 767px) {
+              .header .headerPrincipal ul li .nav-link:hover {
+                color: #fc4e03; } }
         .header .headerPrincipal ul li a {
           text-decoration: none;
           color: #1f2a44;
@@ -53,7 +59,7 @@ ol, ul {
           letter-spacing: 1px;
           font-size: 1.25rem; }
           .header .headerPrincipal ul li a:hover {
-            border-bottom: 5px #fc4e03 solid;
+            border-bottom: 5px #31fac8 solid;
             color: #fc4e03; }
           @media (max-width: 767px) {
             .header .headerPrincipal ul li a {
@@ -71,7 +77,8 @@ ol, ul {
       justify-content: space-evenly;
       font-family: 'Staatliches', cursive;
       letter-spacing: 1px;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      color: white; }
       .header .headerPrincipal .headerInfo .fas {
         color: #fc4e03;
         font-size: 20px; }
@@ -91,7 +98,7 @@ ol, ul {
       background-color: #31fac8; }
   .header .headerImagen {
     height: 100%;
-    background-image: url(../images/background_imageSEO.jpg);
+    background-image: url(../images/backgrounds/bg15.jpg);
     background-position: center;
     background-size: cover; }
     .header .headerImagen .textoHeaderIndex {
@@ -979,10 +986,17 @@ ol, ul {
         list-style: none; }
         .headerContacto .headerPrincipal ul li .nav-link {
           color: #1f2a44;
-          display: inline !important; }
+          display: inline !important;
+          color: white;
+          transition: all ease 0.15s; }
           @media (min-width: 768px) {
             .headerContacto .headerPrincipal ul li .nav-link {
               padding: 15px 20px; } }
+          .headerContacto .headerPrincipal ul li .nav-link:hover {
+            color: #31fac8; }
+            @media (max-width: 767px) {
+              .headerContacto .headerPrincipal ul li .nav-link:hover {
+                color: #fc4e03; } }
         .headerContacto .headerPrincipal ul li a {
           text-decoration: none;
           color: #1f2a44;
@@ -992,7 +1006,7 @@ ol, ul {
           letter-spacing: 1px;
           font-size: 1.25rem; }
           .headerContacto .headerPrincipal ul li a:hover {
-            border-bottom: 5px #fc4e03 solid;
+            border-bottom: 5px #31fac8 solid;
             color: #fc4e03; }
           @media (max-width: 767px) {
             .headerContacto .headerPrincipal ul li a {
@@ -1010,7 +1024,8 @@ ol, ul {
       justify-content: space-evenly;
       font-family: 'Staatliches', cursive;
       letter-spacing: 1px;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      color: white; }
       .headerContacto .headerPrincipal .headerInfo .fas {
         color: #fc4e03;
         font-size: 20px; }
@@ -1030,7 +1045,7 @@ ol, ul {
       background-color: #31fac8; }
   .headerContacto .headerImagen {
     height: 100%;
-    background-image: url(../images/contactoBackground.png);
+    background-image: url(../images/backgrounds/bg5.jpg);
     background-position: center;
     background-size: cover; }
     .headerContacto .headerImagen .textoHeaderIndex {
@@ -1130,3 +1145,292 @@ ol, ul {
           left: 0;
           right: 0;
           background-color: rgba(0, 0, 0, 0.5); } }
+
+.contenedorGridPosventa {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 100vh 75px auto auto;
+  grid-template-areas: "headerPosventa headerPosventa headerPosventa" "headerSec headerSec headerSec" ". posventa ." "footer footer footer"; }
+  @media (max-width: 1024px) {
+    .contenedorGridPosventa {
+      grid-template-areas: "headerPosventa headerPosventa headerPosventa" "headerSec headerSec headerSec" "posventa posventa posventa" "footer footer footer"; } }
+
+.headerPosventa {
+  grid-area: headerPosventa; }
+  .headerPosventa .headerPrincipal {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: #fc4e03 2px solid;
+    position: absolute; }
+    .headerPosventa .headerPrincipal ul {
+      display: flex;
+      flex-wrap: wrap;
+      transition: all ease 0.15s; }
+      .headerPosventa .headerPrincipal ul li {
+        list-style: none; }
+        .headerPosventa .headerPrincipal ul li .nav-link {
+          color: #fc4e03;
+          display: inline !important;
+          transition: all ease 0.15s; }
+          @media (min-width: 768px) {
+            .headerPosventa .headerPrincipal ul li .nav-link {
+              padding: 15px 20px; } }
+          .headerPosventa .headerPrincipal ul li .nav-link:hover {
+            color: #31fac8; }
+            @media (max-width: 767px) {
+              .headerPosventa .headerPrincipal ul li .nav-link:hover {
+                color: white; } }
+        .headerPosventa .headerPrincipal ul li a {
+          text-decoration: none;
+          padding: 15px 20px;
+          transition: all ease 0.15s;
+          font-family: 'Staatliches', cursive;
+          letter-spacing: 1px;
+          font-size: 1.25rem; }
+          .headerPosventa .headerPrincipal ul li a:hover {
+            border-bottom: 5px #31fac8 solid;
+            color: #fc4e03; }
+          @media (max-width: 767px) {
+            .headerPosventa .headerPrincipal ul li a {
+              font-size: 2rem; } }
+        @media (max-width: 767px) {
+          .headerPosventa .headerPrincipal ul li {
+            padding: 20px 0; } }
+    @media (max-width: 767px) {
+      .headerPosventa .headerPrincipal .navbar-nav {
+        align-items: center; } }
+    .headerPosventa .headerPrincipal .headerInfo {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-family: 'Staatliches', cursive;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      color: #31fac8; }
+      .headerPosventa .headerPrincipal .headerInfo .fas {
+        color: #fc4e03;
+        font-size: 20px; }
+    @media (max-width: 950px) {
+      .headerPosventa .headerPrincipal .disabled {
+        display: none; } }
+    .headerPosventa .headerPrincipal .navbar-collapse {
+      flex-grow: 0; }
+    @media (max-width: 767px) {
+      .headerPosventa .headerPrincipal .navbar-collapse {
+        background-color: #31fac8;
+        z-index: 2; } }
+    @media (max-width: 425px) {
+      .headerPosventa .headerPrincipal {
+        z-index: 1; } }
+    .headerPosventa .headerPrincipal .navbar-toggler {
+      background-color: #31fac8; }
+  .headerPosventa .headerImagen {
+    height: 100%;
+    background-image: url(../images/backgrounds/bg13.jpg);
+    background-position: center;
+    background-size: cover; }
+    .headerPosventa .headerImagen .textoHeaderIndex {
+      color: white;
+      width: 45%;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      position: relative;
+      top: 20%;
+      left: 10%;
+      font-family: 'Staatliches', cursive;
+      letter-spacing: 3px; }
+      .headerPosventa .headerImagen .textoHeaderIndex p {
+        font-size: 1.75rem; }
+        @media (max-width: 767px) {
+          .headerPosventa .headerImagen .textoHeaderIndex p {
+            font-size: 1.5rem; } }
+        @media (max-width: 424px) {
+          .headerPosventa .headerImagen .textoHeaderIndex p {
+            font-size: 1.25rem; } }
+      .headerPosventa .headerImagen .textoHeaderIndex a {
+        height: 10%;
+        width: 45%; }
+        .headerPosventa .headerImagen .textoHeaderIndex a button {
+          height: 100%;
+          width: 100%;
+          background-color: #31fac8;
+          border: none;
+          color: #1f2a44;
+          font-weight: bold;
+          font-size: 1.5rem;
+          letter-spacing: 3px;
+          font-family: 'Staatliches', cursive;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer; }
+          .headerPosventa .headerImagen .textoHeaderIndex a button:hover {
+            background-color: #fc4e03; }
+          @media (max-width: 424px) {
+            .headerPosventa .headerImagen .textoHeaderIndex a button {
+              font-size: 1.25rem; } }
+      .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+        font-size: 6.5rem; }
+        @media (max-width: 1900px) {
+          .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+            font-size: 5.5rem; } }
+        @media (max-width: 1600px) {
+          .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+            font-size: 5rem; } }
+        @media (max-width: 812px) {
+          .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+            font-size: 4rem; } }
+        @media (max-width: 424px) {
+          .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+            font-size: 3.75rem; } }
+      .headerPosventa .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex .legendario {
+        color: #31fac8; }
+      @media (max-width: 1440px) {
+        .headerPosventa .headerImagen .textoHeaderIndex {
+          width: 50%;
+          height: 75%; } }
+      @media (max-width: 1300px) {
+        .headerPosventa .headerImagen .textoHeaderIndex {
+          width: 65%;
+          height: 75%; } }
+      @media (max-width: 865px) {
+        .headerPosventa .headerImagen .textoHeaderIndex {
+          width: 80%;
+          height: 75%; } }
+      @media (max-width: 424px) {
+        .headerPosventa .headerImagen .textoHeaderIndex {
+          left: 5%;
+          width: 90%;
+          height: 75%; } }
+      @media (max-width: 340px) {
+        .headerPosventa .headerImagen .textoHeaderIndex {
+          left: 2%;
+          width: 96%;
+          height: 75%; } }
+    @media (max-width: 1024px) {
+      .headerPosventa .headerImagen {
+        background-position: -280px; } }
+    @media (max-width: 1023px) {
+      .headerPosventa .headerImagen {
+        background-position: 70%; } }
+    @media (max-width: 425px) {
+      .headerPosventa .headerImagen {
+        background-image: url(../images/phoneBackground.jpg);
+        position: relative; }
+        .headerPosventa .headerImagen:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.5); } }
+
+.posventa {
+  grid-area: posventa;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  margin-top: 3rem; }
+  .posventa .revision {
+    display: flex; }
+    .posventa .revision .tituloRevision {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 5%;
+      font-size: 2.5rem;
+      color: #fc4e03;
+      text-align: center;
+      font-weight: bold; }
+    .posventa .revision ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column; }
+      .posventa .revision ul li {
+        list-style: decimal; }
+  .posventa .servicio {
+    display: flex;
+    margin-top: 3rem; }
+    .posventa .servicio .tituloServicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 2.5rem;
+      padding-right: 5%;
+      color: #fc4e03;
+      font-weight: bold;
+      text-align: center; }
+    .posventa .servicio .textoServicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+  .posventa .mantenimiento {
+    display: flex;
+    margin-top: 3rem; }
+    .posventa .mantenimiento .tituloMantenimiento {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 5%;
+      font-size: 2rem;
+      text-align: center;
+      color: #fc4e03;
+      font-weight: bold; }
+    .posventa .mantenimiento .textoMantenimiento {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+  .posventa .vehiculo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .posventa .vehiculo img {
+      width: 100%; }
+    .posventa .vehiculo .garantia {
+      height: 800px;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center; }
+      .posventa .vehiculo .garantia .tituloGarantia {
+        color: #fc4e03;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center; }
+    .posventa .vehiculo .equipo {
+      height: 800px;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center; }
+      .posventa .vehiculo .equipo img {
+        width: 100%; }
+      .posventa .vehiculo .equipo .tituloEquipo {
+        color: #fc4e03;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center; }
+  .posventa .colision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; }
+    .posventa .colision .tituloColision {
+      color: #fc4e03;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center; }
+    .posventa .colision img {
+      padding: 2rem 0;
+      width: 80%; }

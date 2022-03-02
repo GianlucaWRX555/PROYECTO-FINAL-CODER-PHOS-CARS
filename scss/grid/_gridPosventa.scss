@@ -1,0 +1,20 @@
+.contenedorGridPosventa{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 100vh 75px auto auto;
+    grid-template-areas: 
+    "headerPosventa headerPosventa headerPosventa"
+    "headerSec headerSec headerSec"
+    ". posventa ."
+    "footer footer footer"
+    ;
+
+    @media(max-width:1024px){
+        grid-template-areas: 
+        "headerPosventa headerPosventa headerPosventa"
+        "headerSec headerSec headerSec"
+        "posventa posventa posventa"
+        "footer footer footer"
+        ; 
+    }
+}
