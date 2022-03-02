@@ -1349,12 +1349,24 @@ ol, ul {
       color: #fc4e03;
       text-align: center;
       font-weight: bold; }
+      @media (max-width: 850px) {
+        .posventa .revision .tituloRevision {
+          padding-right: 0; } }
     .posventa .revision ul {
       display: flex;
       justify-content: space-evenly;
       flex-direction: column; }
       .posventa .revision ul li {
         list-style: decimal; }
+      @media (max-width: 850px) {
+        .posventa .revision ul {
+          padding: 0 5%; } }
+    @media (max-width: 424px) {
+      .posventa .revision img {
+        width: 100%; } }
+    @media (max-width: 850px) {
+      .posventa .revision {
+        flex-direction: column; } }
   .posventa .servicio {
     display: flex;
     margin-top: 3rem; }
@@ -1368,10 +1380,22 @@ ol, ul {
       color: #fc4e03;
       font-weight: bold;
       text-align: center; }
+      @media (max-width: 850px) {
+        .posventa .servicio .tituloServicio {
+          padding-right: 0; } }
     .posventa .servicio .textoServicio {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
+      @media (max-width: 850px) {
+        .posventa .servicio .textoServicio {
+          padding: 0 5%; } }
+    @media (max-width: 424px) {
+      .posventa .servicio img {
+        width: 100%; } }
+    @media (max-width: 850px) {
+      .posventa .servicio {
+        flex-direction: column; } }
   .posventa .mantenimiento {
     display: flex;
     margin-top: 3rem; }
@@ -1385,10 +1409,22 @@ ol, ul {
       text-align: center;
       color: #fc4e03;
       font-weight: bold; }
+      @media (max-width: 850px) {
+        .posventa .mantenimiento .tituloMantenimiento {
+          padding-right: 0; } }
     .posventa .mantenimiento .textoMantenimiento {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
+      @media (max-width: 850px) {
+        .posventa .mantenimiento .textoMantenimiento {
+          padding: 0 5%; } }
+    @media (max-width: 424px) {
+      .posventa .mantenimiento img {
+        width: 100%; } }
+    @media (max-width: 850px) {
+      .posventa .mantenimiento {
+        flex-direction: column; } }
   .posventa .vehiculo {
     display: flex;
     justify-content: space-evenly;
@@ -1407,6 +1443,12 @@ ol, ul {
         font-weight: bold;
         font-size: 2rem;
         text-align: center; }
+      @media (max-width: 850px) {
+        .posventa .vehiculo .garantia p {
+          padding: 0 5%; } }
+      @media (max-width: 850px) {
+        .posventa .vehiculo .garantia {
+          width: 100%; } }
     .posventa .vehiculo .equipo {
       height: 800px;
       width: 45%;
@@ -1421,6 +1463,15 @@ ol, ul {
         font-weight: bold;
         font-size: 2rem;
         text-align: center; }
+      @media (max-width: 850px) {
+        .posventa .vehiculo .equipo p {
+          padding: 0 5%; } }
+      @media (max-width: 850px) {
+        .posventa .vehiculo .equipo {
+          width: 100%; } }
+    @media (max-width: 850px) {
+      .posventa .vehiculo {
+        flex-direction: column; } }
   .posventa .colision {
     display: flex;
     flex-direction: column;
@@ -1434,3 +1485,9 @@ ol, ul {
     .posventa .colision img {
       padding: 2rem 0;
       width: 80%; }
+      @media (max-width: 850px) {
+        .posventa .colision img {
+          width: 100%; } }
+    @media (max-width: 850px) {
+      .posventa .colision p {
+        padding: 0 5%; } }

@@ -20,6 +20,10 @@
             color: $naranja;
             text-align: center;
             font-weight: bold;
+
+            @media(max-width:850px){
+                padding-right: 0;
+            }
         }
 
         ul{
@@ -30,6 +34,20 @@
             li{
                 list-style: decimal;
             }
+
+            @media(max-width:850px){
+                padding: 0 5%;
+            }
+        }
+
+        img{
+            @media(max-width:424px){
+                width: 100%;
+            }
+        }
+
+        @media(max-width:850px){
+            flex-direction: column;
         }
     }
 
@@ -47,12 +65,30 @@
             color: $naranja;
             font-weight: bold;
             text-align: center;
+
+            @media(max-width:850px){
+                padding-right: 0;
+            }
         }
 
         .textoServicio{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media(max-width:850px){
+                padding: 0 5%;
+            }
+        }
+
+        img{
+            @media(max-width:424px){
+                width: 100%;
+            }
+        }
+
+        @media(max-width:850px){
+            flex-direction: column;
         }
     }
 
@@ -70,12 +106,30 @@
             text-align: center;
             color: $naranja;
             font-weight: bold;
+
+            @media(max-width:850px){
+                padding-right: 0;
+            }
         }
 
         .textoMantenimiento{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media(max-width:850px){
+                padding: 0 5%;
+            }
+        }
+
+        img{
+            @media(max-width:424px){
+                width: 100%;
+            }
+        }
+
+        @media(max-width:850px){
+            flex-direction: column;
         }
     }
 
@@ -102,6 +156,17 @@
                 font-size: 2rem;
                 text-align: center;
             }
+
+            p{
+                @media(max-width:850px){
+                    padding: 0 5%;
+                }
+            }
+
+            @media(max-width:850px){
+                width: 100%;
+            }
+            
         }
 
         .equipo{
@@ -122,6 +187,20 @@
                 font-size: 2rem;
                 text-align: center;
             }
+
+            p{
+                @media(max-width:850px){
+                    padding: 0 5%;
+                }
+            }
+
+            @media(max-width:850px){
+                width: 100%;
+            }
+        }
+
+        @media(max-width:850px){
+            flex-direction: column;
         }
     }
 
@@ -141,6 +220,16 @@
         img{
             padding: 2rem 0;
             width: 80%;
+
+            @media(max-width:850px){
+                width: 100%;
+            }
+        }
+
+        p{
+            @media(max-width:850px){
+                padding: 0 5%;
+            }
         }
     }
 }
