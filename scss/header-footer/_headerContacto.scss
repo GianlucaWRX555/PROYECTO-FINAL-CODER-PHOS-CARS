@@ -20,9 +20,19 @@
                 .nav-link{
                     color: $azul;
                     display: inline!important;
+                    color: white;
+                    transition: all ease 0.15s;
 
                     @media (min-width: 768px){
                         padding: 15px 20px;
+                    }
+
+                    &:hover{
+                        color: $phos1;
+
+                        @media(max-width:767px){
+                            color: $naranja;
+                        }
                     }
                 }
 
@@ -36,7 +46,7 @@
                     font-size: 1.25rem;
 
                     &:hover{
-                        border-bottom: 5px $naranja solid;
+                        border-bottom: 5px $phos1 solid;
                         color: $naranja;
                     }
 
@@ -65,6 +75,7 @@
             font-family: 'Staatliches', cursive;
             letter-spacing: 1px;
             font-size: 1.1rem;
+            color: white;
             
             .fas{
                 color: $naranja;
@@ -101,7 +112,7 @@
 
     .headerImagen{
         height: 100%;
-        background-image: url(../images/contactoBackground.png);
+        background-image: url(../images/backgrounds/bg5.jpg);
         background-position: center;
         background-size: cover;
 
