@@ -6,24 +6,13 @@
     letter-spacing: 1px;
     font-size: 1.1rem;
     margin-top: 3rem;
+    color: white;
 
     .revision{
         display: flex;
         
         .tituloRevision{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            padding-right: 5%;
-            font-size: 2.5rem;
-            color: $naranja;
-            text-align: center;
-            font-weight: bold;
-
-            @media(max-width:850px){
-                padding-right: 0;
-            }
+            @extend %tituloPosventa;
         }
 
         ul{
@@ -56,19 +45,7 @@
         margin-top: 3rem;
 
         .tituloServicio{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 2.5rem;
-            padding-right: 5%;
-            color: $naranja;
-            font-weight: bold;
-            text-align: center;
-
-            @media(max-width:850px){
-                padding-right: 0;
-            }
+            @extend %tituloPosventa;
         }
 
         .textoServicio{
@@ -97,19 +74,7 @@
         margin-top: 3rem;
 
         .tituloMantenimiento{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            padding-right: 5%;
-            font-size: 2rem;
-            text-align: center;
-            color: $naranja;
-            font-weight: bold;
-
-            @media(max-width:850px){
-                padding-right: 0;
-            }
+            @extend %tituloPosventa;
         }
 
         .textoMantenimiento{

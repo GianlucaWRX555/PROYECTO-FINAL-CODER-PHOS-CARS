@@ -14,7 +14,7 @@
 
     // 1 parte - muestraVehiculosIndex-------------------------------------------
     .muestraVehiculosIndex{
-        background-color: $azul;
+        background-color: $azul3;
         grid-area: muestraVehiculosIndex;
 
         text-align: center;
@@ -31,62 +31,32 @@
 
         .contenedorAuto1{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .contenedorAuto2{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .contenedorAuto3{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .contenedorAuto4{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .contenedorAuto5{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .contenedorAuto6{
 
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 2rem;
-            }
+            @extend %ultimosVehiculosContenedor;
         }
 
         .autoi{
@@ -144,45 +114,17 @@
             ;
 
             .seccionesVehiculos{
-                background-color: crimson;
                 grid-area: seccionesVehiculos;
-                background-image: url(../images/seccionVehiculos.png);
-                background-position: center;
-                background-size: contain;
-                height: 450px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 3rem;
-                    color: $azul;
-                }
+                background-image: url(../images/seccionVehiculosSEO.jpg);
+                
+                @extend %contenedorSecciones;
             }
 
             .seccionesPosventa{
-                background-color: royalblue;
                 grid-area: seccionesPosventa;
-                background-image: url(../images/seccionVehiculos.png);
-                background-position: center;
-                background-size: contain;
-                height: 450px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
+                background-image: url(../images/seccionPosventaSEO.jpg);
 
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 3rem;
-                    color: $azul;
-                }
+                @extend %contenedorSecciones;
             }
 
             @media(max-width:425px){
@@ -207,46 +149,17 @@
             ;
 
             .seccionesSobreNosotros{
-                background-color: dimgray;
                 grid-area: seccionesSobreNosotros;
-                background-image: url(../images/seccionVehiculos.png);
-                background-position: center;
-                background-size: contain;
-                height: 450px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 3rem;
-                    color: $azul;
-                    text-align: center;
-                }
+                background-image: url(../images/seccionSobreNosotrosSEO.jpg);
+                
+                @extend %contenedorSecciones;
             }
 
             .seccionesContacto{
-                background-color: darkgreen;
                 grid-area: seccionesContacto;
-                background-image: url(../images/seccionVehiculos.png);
-                background-position: center;
-                background-size: contain;
-                height: 450px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
+                background-image: url(../images/seccionContactoSEO.jpg);
 
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 3rem;
-                    color: $azul;
-                }
+                @extend %contenedorSecciones;
             }
 
             @media(max-width:425px){
@@ -272,7 +185,7 @@
     // 3 parte - EstadisticaIndex-----------------------------------------
     .estadisticasIndex{
         grid-area: estadisticasIndex;
-        background-color: $azul;
+        background-color: $azul3;
         display: grid;
         grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
         grid-template-rows: auto auto;
@@ -311,120 +224,92 @@
 
             .datoEstadistica1{
                 grid-area: datoEstadistica1;
-                border: 2px solid $naranja;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                
+                @extend %datoEstadistica;
+
+                &:hover{
+                    background-color: $phos1;
+                    
+                    p{
+                        color: $azul3;
+                    }
+
+                    .fa-car{
+                        color: $azul3;
+                    }
+                }
 
                 .fa-car{
                     color: $naranja;
                     font-size: 3rem;
                 }
-
-                p{
-                    color: $naranja;
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 2rem;
-
-                    @media(max-width:1440px){
-                        font-size: 1.5rem;
-                    }
-
-                    @media(max-width:425px){
-                        font-size: 2rem;
-                    }
-                }
             }
 
             .datoEstadistica2{
-                border: 2px solid $naranja;
                 grid-area: datoEstadistica2;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                
+                @extend %datoEstadistica;
 
                 .fa-chart-line{
                     color: $naranja;
                     font-size: 3rem;
                 }
 
-                p{
-                    color: $naranja;
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 2rem;
-
-                    @media(max-width:1440px){
-                        font-size: 1.5rem;
+                &:hover{
+                    background-color: $phos1;
+                    
+                    p{
+                        color: $azul3;
                     }
 
-                    @media(max-width:425px){
-                        font-size: 2rem;
+                    .fa-chart-line{
+                        color: $azul3;
                     }
                 }
             }
             
             .datoEstadistica3{
-                border: 2px solid $naranja;
                 grid-area: datoEstadistica3;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+
+                @extend %datoEstadistica;
 
                 .fa-face-grin-stars{
                     color: $naranja;
                     font-size: 3rem;
                 }
 
-                p{
-                    color: $naranja;
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 2rem;
-
-                    @media(max-width:1440px){
-                        font-size: 1.5rem;
+                &:hover{
+                    background-color: $phos1;
+                    
+                    p{
+                        color: $azul3;
                     }
 
-                    @media(max-width:425px){
-                        font-size: 2rem;
+                    .fa-face-grin-stars{
+                        color: $azul3;
                     }
                 }
             }
 
             .datoEstadistica4{
-                border: 2px solid $naranja;
                 grid-area: datoEstadistica4;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+
+                @extend %datoEstadistica;
 
                 .fa-calendar-check{
                     color: $naranja;
                     font-size: 3rem;
                 }
 
-                p{
-                    color: $naranja;
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 2rem;
-
-                    @media(max-width:1440px){
-                        font-size: 1.5rem;
+                &:hover{
+                    background-color: $phos1;
+                    
+                    p{
+                        color: $azul3;
                     }
 
-                    @media(max-width:425px){
-                        font-size: 2rem;
+                    .fa-calendar-check{
+                        color: $azul3;
                     }
                 }
             }
@@ -457,99 +342,27 @@
         ". contenedorOpinionesIndex1 contenedorOpinionesIndex2 contenedorOpinionesIndex3 ."
         ;
         align-items: center;
-        background-image: url(../images/opinionesBackground2.png);
+        background-image: url(../images/bgOpinionesSEO.jpg);
         background-position: center;
         background-size: cover;
         height: 300px;
 
         .contenedorOpinionesIndex1{
             grid-area: contenedorOpinionesIndex1 ;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-
-            .estrellas{
-                color: $naranja;
-                font-size: 2rem;
-
-                @media(max-width:970px){
-                    font-size: 1.5rem;
-                }
-            }
-
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 1.15rem;
-                text-align: center;
-            }
-
-            @media(max-width:630px){
-                position: relative;
-            }
+            
+            @extend %contenedorOpiniones;
         }
 
         .contenedorOpinionesIndex2{
             grid-area: contenedorOpinionesIndex2 ;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
 
-            .estrellas{
-                color: $naranja;
-                font-size: 2rem;
-
-                @media(max-width:970px){
-                    font-size: 1.5rem;
-                }
-            }
-
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 1.15rem;
-                text-align: center;
-            }
-
-            @media(max-width:630px){
-                position: relative;
-            }
+            @extend %contenedorOpiniones;
         }
 
         .contenedorOpinionesIndex3{
             grid-area: contenedorOpinionesIndex3 ;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-
-            .estrellas{
-                color: $naranja;
-                font-size: 2rem;
-
-                @media(max-width:970px){
-                    font-size: 1.5rem;
-                }
-            }
-
-            p{
-                color: $naranja;
-                font-family: 'Staatliches', cursive;
-                letter-spacing: 2px;
-                font-size: 1.15rem;
-                text-align: center;
-            }
-
-            @media(max-width:630px){
-                position: relative;
-            }
+            
+            @extend %contenedorOpiniones;
         }
         
         @media(max-width:1250px){
@@ -595,7 +408,7 @@
 
     // 5 parte - infoIndex-------------------------------------------
     .infoIndex{
-        background-color: $azul;
+        background-color: $azul3;
         grid-area: infoIndex;
 
         display: grid;
@@ -610,84 +423,14 @@
         .contenedorInfoIndex1{
             grid-area: contenedorInfoIndex1;
 
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 35px 0;
-
-            img{
-                width: 50%;
-                border-radius: 20px;
-
-                @media(max-width:768px){
-                    margin-bottom: 35px;
-                    width: 100%;
-                    border-radius: 0;
-                }
-            }
-
-            .textoInfo{
-                width: 40%;
-                height: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 1.15rem;
-                    text-align: center;
-                    color: $phos1;
-
-                    @media(max-width:768px){
-                        font-size: 1.5rem;
-                    }
-                }
-
-                a{
-                    color: $azul;
-                    width: 40%;
-                    height: 45px;
-                    
-                    button{
-                        background-color: $phos1;
-                        color: $azul;
-                        border: none;
-                        width: 100%;
-                        height: 100%;
-                        font-family: 'Staatliches', cursive;
-                        letter-spacing: 2px;
-                        font-size: 1.15rem;
-                        transition: all ease 0.3s;
-
-                        &:hover{
-                            background-color: $naranja;
-                            border-radius: 25px;
-                        }
-                    }
-
-                    @media(max-width:768px){
-                        width: 60%;
-                    }
-                }
-
-                @media(max-width:768px){
-                    width: 85%;
-                }
-            }
-
-            @media(max-width:768px){
-                flex-direction: column;
-            }
+            @extend %contenedorInfoIndex;
         }
 
         .contenedorInfoIndex2{
             grid-area: contenedorInfoIndex2;
 
-            display: flex;
             flex-direction: row-reverse;
+            display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin: 35px 0;
@@ -705,16 +448,24 @@
 
             .textoInfo{
                 width: 40%;
-                height: 50%;
+                height: 80%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
 
+                .tituloInfo{
+                    font-size: 3rem;
+
+                    @media(max-width:1120px){
+                        font-size: 2.5rem;
+                    }
+                }
+
                 p{
                     font-family: 'Staatliches', cursive;
                     letter-spacing: 2px;
-                    font-size: 1.15rem;
+                    font-size: 1.3rem;
                     text-align: center;
                     color: $phos1;
 
@@ -748,6 +499,10 @@
                     @media(max-width:768px){
                         width: 60%;
                     }
+                }
+
+                @media(max-width:1120px){
+                    width: 45%;
                 }
 
                 @media(max-width:768px){
@@ -764,77 +519,7 @@
         .contenedorInfoIndex3{
             grid-area: contenedorInfoIndex3;
 
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 35px 0;
-
-            img{
-                width: 50%;
-                border-radius: 20px;
-
-                @media(max-width:768px){
-                    margin-bottom: 35px;
-                    width: 100%;
-                    border-radius: 0;
-                }
-            }
-
-            .textoInfo{
-                width: 40%;
-                height: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-
-                p{
-                    font-family: 'Staatliches', cursive;
-                    letter-spacing: 2px;
-                    font-size: 1.15rem;
-                    text-align: center;
-                    color: $phos1;
-
-                    @media(max-width:768px){
-                        font-size: 1.5rem;
-                    }
-                }
-
-                a{
-                    color: $azul;
-                    width: 40%;
-                    height: 45px;
-                    
-                    button{
-                        background-color: $phos1;
-                        color: $azul;
-                        border: none;
-                        width: 100%;
-                        height: 100%;
-                        font-family: 'Staatliches', cursive;
-                        letter-spacing: 2px;
-                        font-size: 1.15rem;
-                        transition: all ease 0.3s;
-
-                        &:hover{
-                            background-color: $naranja;
-                            border-radius: 25px;
-                        }
-                    }
-
-                    @media(max-width:768px){
-                        width: 60%;
-                    }
-                }
-
-                @media(max-width:768px){
-                    width: 85%;
-                }
-            }
-
-            @media(max-width:768px){
-                flex-direction: column;
-            }
+            @extend %contenedorInfoIndex;
         }
 
         @media(max-width:1440px){
