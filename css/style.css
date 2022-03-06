@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #efefef; }
+  background-color: #1f2a44; }
 
 dl, ol, ul {
   margin-top: 0;
@@ -205,6 +205,194 @@ ol, ul {
         right: 0;
         background-color: rgba(0, 0, 0, 0.5); } }
 
+.article .muestraVehiculosIndex .contenedorAuto1 p, .article .muestraVehiculosIndex .contenedorAuto2 p, .article .muestraVehiculosIndex .contenedorAuto3 p, .article .muestraVehiculosIndex .contenedorAuto4 p, .article .muestraVehiculosIndex .contenedorAuto5 p, .article .muestraVehiculosIndex .contenedorAuto6 p {
+  color: #fc4e03;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  transition: all ease 0.3s; }
+
+.article .muestraVehiculosIndex .contenedorAuto1:hover p, .article .muestraVehiculosIndex .contenedorAuto2:hover p, .article .muestraVehiculosIndex .contenedorAuto3:hover p, .article .muestraVehiculosIndex .contenedorAuto4:hover p, .article .muestraVehiculosIndex .contenedorAuto5:hover p, .article .muestraVehiculosIndex .contenedorAuto6:hover p {
+  color: #31fac8; }
+
+.article .seccionesIndex .secciones1 .seccionesVehiculos, .article .seccionesIndex .secciones1 .seccionesPosventa, .article .seccionesIndex .secciones2 .seccionesSobreNosotros, .article .seccionesIndex .secciones2 .seccionesContacto {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; }
+  .article .seccionesIndex .secciones1 .seccionesVehiculos p, .article .seccionesIndex .secciones1 .seccionesPosventa p, .article .seccionesIndex .secciones2 .seccionesSobreNosotros p, .article .seccionesIndex .secciones2 .seccionesContacto p {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: #31fac8;
+    z-index: 1;
+    transition: all ease 0.3s; }
+  .article .seccionesIndex .secciones1 .seccionesVehiculos:before, .article .seccionesIndex .secciones1 .seccionesPosventa:before, .article .seccionesIndex .secciones2 .seccionesSobreNosotros:before, .article .seccionesIndex .secciones2 .seccionesContacto:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .article .seccionesIndex .secciones1 .seccionesVehiculos:hover p, .article .seccionesIndex .secciones1 .seccionesPosventa:hover p, .article .seccionesIndex .secciones2 .seccionesSobreNosotros:hover p, .article .seccionesIndex .secciones2 .seccionesContacto:hover p {
+    color: #fc4e03; }
+
+.article .estadisticasIndex .itemsEstadisticas .datoEstadistica1, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 {
+  border: 2px solid #fc4e03;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all ease 0.3s; }
+  .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
+    color: #fc4e03;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 2rem; }
+    @media (max-width: 1440px) {
+      .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
+        font-size: 1.5rem; } }
+    @media (max-width: 425px) {
+      .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p, .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
+        font-size: 2rem; } }
+
+.article .opinionesIndex .contenedorOpinionesIndex1, .article .opinionesIndex .contenedorOpinionesIndex2, .article .opinionesIndex .contenedorOpinionesIndex3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .article .opinionesIndex .contenedorOpinionesIndex1 .estrellas, .article .opinionesIndex .contenedorOpinionesIndex2 .estrellas, .article .opinionesIndex .contenedorOpinionesIndex3 .estrellas {
+    color: #fc4e03;
+    font-size: 2rem; }
+    @media (max-width: 970px) {
+      .article .opinionesIndex .contenedorOpinionesIndex1 .estrellas, .article .opinionesIndex .contenedorOpinionesIndex2 .estrellas, .article .opinionesIndex .contenedorOpinionesIndex3 .estrellas {
+        font-size: 1.5rem; } }
+  .article .opinionesIndex .contenedorOpinionesIndex1 p, .article .opinionesIndex .contenedorOpinionesIndex2 p, .article .opinionesIndex .contenedorOpinionesIndex3 p {
+    color: #fc4e03;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 1.15rem;
+    text-align: center; }
+  @media (max-width: 630px) {
+    .article .opinionesIndex .contenedorOpinionesIndex1, .article .opinionesIndex .contenedorOpinionesIndex2, .article .opinionesIndex .contenedorOpinionesIndex3 {
+      position: relative; } }
+
+.article .infoIndex .contenedorInfoIndex1, .article .infoIndex .contenedorInfoIndex3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 35px 0; }
+  .article .infoIndex .contenedorInfoIndex1 img, .article .infoIndex .contenedorInfoIndex3 img {
+    width: 50%;
+    border-radius: 20px; }
+    @media (max-width: 768px) {
+      .article .infoIndex .contenedorInfoIndex1 img, .article .infoIndex .contenedorInfoIndex3 img {
+        margin-bottom: 35px;
+        width: 100%;
+        border-radius: 0; } }
+  .article .infoIndex .contenedorInfoIndex1 .textoInfo, .article .infoIndex .contenedorInfoIndex3 .textoInfo {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .article .infoIndex .contenedorInfoIndex1 .textoInfo .tituloInfo, .article .infoIndex .contenedorInfoIndex3 .textoInfo .tituloInfo {
+      font-size: 3rem; }
+      @media (max-width: 1120px) {
+        .article .infoIndex .contenedorInfoIndex1 .textoInfo .tituloInfo, .article .infoIndex .contenedorInfoIndex3 .textoInfo .tituloInfo {
+          font-size: 2.5rem; } }
+    .article .infoIndex .contenedorInfoIndex1 .textoInfo p, .article .infoIndex .contenedorInfoIndex3 .textoInfo p {
+      font-family: 'Staatliches', cursive;
+      letter-spacing: 2px;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #31fac8; }
+      @media (max-width: 768px) {
+        .article .infoIndex .contenedorInfoIndex1 .textoInfo p, .article .infoIndex .contenedorInfoIndex3 .textoInfo p {
+          font-size: 1.5rem; } }
+    .article .infoIndex .contenedorInfoIndex1 .textoInfo a, .article .infoIndex .contenedorInfoIndex3 .textoInfo a {
+      color: #1f2a44;
+      width: 40%;
+      height: 45px; }
+      .article .infoIndex .contenedorInfoIndex1 .textoInfo a button, .article .infoIndex .contenedorInfoIndex3 .textoInfo a button {
+        background-color: #31fac8;
+        color: #1f2a44;
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2px;
+        font-size: 1.15rem;
+        transition: all ease 0.3s; }
+        .article .infoIndex .contenedorInfoIndex1 .textoInfo a button:hover, .article .infoIndex .contenedorInfoIndex3 .textoInfo a button:hover {
+          background-color: #fc4e03;
+          border-radius: 25px; }
+      @media (max-width: 768px) {
+        .article .infoIndex .contenedorInfoIndex1 .textoInfo a, .article .infoIndex .contenedorInfoIndex3 .textoInfo a {
+          width: 60%; } }
+    @media (max-width: 1120px) {
+      .article .infoIndex .contenedorInfoIndex1 .textoInfo, .article .infoIndex .contenedorInfoIndex3 .textoInfo {
+        width: 45%; } }
+    @media (max-width: 768px) {
+      .article .infoIndex .contenedorInfoIndex1 .textoInfo, .article .infoIndex .contenedorInfoIndex3 .textoInfo {
+        width: 85%; } }
+  @media (max-width: 768px) {
+    .article .infoIndex .contenedorInfoIndex1, .article .infoIndex .contenedorInfoIndex3 {
+      flex-direction: column; } }
+
+.posventa .revision .tituloRevision, .posventa .servicio .tituloServicio, .posventa .mantenimiento .tituloMantenimiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 5%;
+  font-size: 2.5rem;
+  color: #fc4e03;
+  text-align: center;
+  font-weight: bold; }
+  @media (max-width: 850px) {
+    .posventa .revision .tituloRevision, .posventa .servicio .tituloServicio, .posventa .mantenimiento .tituloMantenimiento {
+      padding-right: 0; } }
+
+.sobreNosotros .vision, .sobreNosotros .distribucion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0; }
+  .sobreNosotros .vision img, .sobreNosotros .distribucion img {
+    width: 95%;
+    height: 75%; }
+    @media (max-width: 950px) {
+      .sobreNosotros .vision img, .sobreNosotros .distribucion img {
+        width: 100%; } }
+
+.sobreNosotros .empresa, .sobreNosotros .garage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0; }
+  .sobreNosotros .empresa img, .sobreNosotros .garage img {
+    width: 90%;
+    height: 75%;
+    margin-bottom: 2rem; }
+    @media (max-width: 950px) {
+      .sobreNosotros .empresa img, .sobreNosotros .garage img {
+        width: 100%; } }
+    @media (max-width: 950px) {
+      .sobreNosotros .empresa img, .sobreNosotros .garage img {
+        margin-bottom: 0; } }
+
 .contenedorGrid {
   display: grid;
   grid-template-columns: 0.25fr 1fr 0.25fr;
@@ -276,18 +464,21 @@ ol, ul {
         display: none; } }
     .header .headerPrincipal .navbar-collapse {
       flex-grow: 0; }
+    @media (max-width: 1100px) {
+      .header .headerPrincipal .navbar-collapse {
+        z-index: 2; } }
     @media (max-width: 767px) {
       .header .headerPrincipal .navbar-collapse {
         background-color: #31fac8;
         z-index: 2; } }
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       .header .headerPrincipal {
         z-index: 1; } }
     .header .headerPrincipal .navbar-toggler {
       background-color: #31fac8; }
   .header .headerImagen {
     height: 100%;
-    background-image: url(../images/backgrounds/bg15.jpg);
+    background-image: url(../images/backgrounds/bgIndexSEO2.jpg);
     background-position: center;
     background-size: cover; }
     .header .headerImagen .textoHeaderIndex {
@@ -366,6 +557,18 @@ ol, ul {
           left: 2%;
           width: 96%;
           height: 75%; } }
+    @media (max-width: 1100px) {
+      .header .headerImagen:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3); } }
+    @media (max-width: 1030px) {
+      .header .headerImagen {
+        background-position: 55%; } }
     @media (max-width: 425px) {
       .header .headerImagen {
         background-image: url(../images/phoneBackground.jpg);
@@ -438,7 +641,7 @@ ol, ul {
   row-gap: 25px;
   grid-template-areas: ". . muestraVehiculosIndex muestraVehiculosIndex . ." ". . seccionesIndex seccionesIndex . ." "estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex estadisticasIndex" "opinionesIndex opinionesIndex opinionesIndex opinionesIndex opinionesIndex opinionesIndex" "infoIndex infoIndex infoIndex infoIndex infoIndex infoIndex"; }
   .article .muestraVehiculosIndex {
-    background-color: #1f2a44;
+    background-color: #013392;
     grid-area: muestraVehiculosIndex;
     text-align: center; }
     .article .muestraVehiculosIndex .tituloMuestraVehiculosIndex p {
@@ -447,42 +650,12 @@ ol, ul {
       letter-spacing: 2px;
       font-size: 3rem;
       padding-top: 20px; }
-    .article .muestraVehiculosIndex .contenedorAuto1 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
-    .article .muestraVehiculosIndex .contenedorAuto2 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
-    .article .muestraVehiculosIndex .contenedorAuto3 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
-    .article .muestraVehiculosIndex .contenedorAuto4 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
-    .article .muestraVehiculosIndex .contenedorAuto5 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
-    .article .muestraVehiculosIndex .contenedorAuto6 p {
-      color: #fc4e03;
-      font-family: 'Staatliches', cursive;
-      letter-spacing: 2px;
-      font-size: 2rem; }
     .article .muestraVehiculosIndex .autoi {
       width: 75%; }
     @media (max-width: 1100px) {
       .article .muestraVehiculosIndex img {
         width: 75%; } }
-    @media (max-width: 425px) {
+    @media (max-width: 715px) {
       .article .muestraVehiculosIndex .responsive425 {
         flex-direction: column !important; } }
   .article .seccionesIndex {
@@ -508,39 +681,11 @@ ol, ul {
       column-gap: 20px;
       grid-template-areas: "seccionesVehiculos seccionesPosventa"; }
       .article .seccionesIndex .secciones1 .seccionesVehiculos {
-        background-color: crimson;
         grid-area: seccionesVehiculos;
-        background-image: url(../images/seccionVehiculos.png);
-        background-position: center;
-        background-size: contain;
-        height: 450px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; }
-        .article .seccionesIndex .secciones1 .seccionesVehiculos p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 3rem;
-          color: #1f2a44; }
+        background-image: url(../images/seccionVehiculosSEO.jpg); }
       .article .seccionesIndex .secciones1 .seccionesPosventa {
-        background-color: royalblue;
         grid-area: seccionesPosventa;
-        background-image: url(../images/seccionVehiculos.png);
-        background-position: center;
-        background-size: contain;
-        height: 450px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; }
-        .article .seccionesIndex .secciones1 .seccionesPosventa p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 3rem;
-          color: #1f2a44; }
+        background-image: url(../images/seccionPosventaSEO.jpg); }
       @media (max-width: 425px) {
         .article .seccionesIndex .secciones1 {
           grid-template-rows: 1fr 1fr;
@@ -554,40 +699,11 @@ ol, ul {
       column-gap: 20px;
       grid-template-areas: "seccionesSobreNosotros seccionesContacto"; }
       .article .seccionesIndex .secciones2 .seccionesSobreNosotros {
-        background-color: dimgray;
         grid-area: seccionesSobreNosotros;
-        background-image: url(../images/seccionVehiculos.png);
-        background-position: center;
-        background-size: contain;
-        height: 450px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; }
-        .article .seccionesIndex .secciones2 .seccionesSobreNosotros p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 3rem;
-          color: #1f2a44;
-          text-align: center; }
+        background-image: url(../images/seccionSobreNosotrosSEO.jpg); }
       .article .seccionesIndex .secciones2 .seccionesContacto {
-        background-color: darkgreen;
         grid-area: seccionesContacto;
-        background-image: url(../images/seccionVehiculos.png);
-        background-position: center;
-        background-size: contain;
-        height: 450px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; }
-        .article .seccionesIndex .secciones2 .seccionesContacto p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 3rem;
-          color: #1f2a44; }
+        background-image: url(../images/seccionContactoSEO.jpg); }
       @media (max-width: 425px) {
         .article .seccionesIndex .secciones2 {
           grid-template-rows: 1fr 1fr;
@@ -598,7 +714,7 @@ ol, ul {
         grid-template-areas: ". tituloSeccionesIndex tituloSeccionesIndex ." "secciones1 secciones1 secciones1 secciones1" "secciones2 secciones2 secciones2 secciones2"; } }
   .article .estadisticasIndex {
     grid-area: estadisticasIndex;
-    background-color: #1f2a44;
+    background-color: #013392;
     display: grid;
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
     grid-template-rows: auto auto;
@@ -624,93 +740,49 @@ ol, ul {
       padding-bottom: 40px;
       text-align: center; }
       .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 {
-        grid-area: datoEstadistica1;
-        border: 2px solid #fc4e03;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
+        grid-area: datoEstadistica1; }
+        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1:hover {
+          background-color: #31fac8; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1:hover p {
+            color: #013392; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1:hover .fa-car {
+            color: #013392; }
         .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 .fa-car {
           color: #fc4e03;
           font-size: 3rem; }
-        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p {
-          color: #fc4e03;
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 2rem; }
-          @media (max-width: 1440px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p {
-              font-size: 1.5rem; } }
-          @media (max-width: 425px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica1 p {
-              font-size: 2rem; } }
       .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 {
-        border: 2px solid #fc4e03;
-        grid-area: datoEstadistica2;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
+        grid-area: datoEstadistica2; }
         .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 .fa-chart-line {
           color: #fc4e03;
           font-size: 3rem; }
-        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p {
-          color: #fc4e03;
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 2rem; }
-          @media (max-width: 1440px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p {
-              font-size: 1.5rem; } }
-          @media (max-width: 425px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2 p {
-              font-size: 2rem; } }
+        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2:hover {
+          background-color: #31fac8; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2:hover p {
+            color: #013392; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica2:hover .fa-chart-line {
+            color: #013392; }
       .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 {
-        border: 2px solid #fc4e03;
-        grid-area: datoEstadistica3;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
+        grid-area: datoEstadistica3; }
         .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 .fa-face-grin-stars {
           color: #fc4e03;
           font-size: 3rem; }
-        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p {
-          color: #fc4e03;
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 2rem; }
-          @media (max-width: 1440px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p {
-              font-size: 1.5rem; } }
-          @media (max-width: 425px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3 p {
-              font-size: 2rem; } }
+        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3:hover {
+          background-color: #31fac8; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3:hover p {
+            color: #013392; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica3:hover .fa-face-grin-stars {
+            color: #013392; }
       .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 {
-        border: 2px solid #fc4e03;
-        grid-area: datoEstadistica4;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
+        grid-area: datoEstadistica4; }
         .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 .fa-calendar-check {
           color: #fc4e03;
           font-size: 3rem; }
-        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
-          color: #fc4e03;
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 2rem; }
-          @media (max-width: 1440px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
-              font-size: 1.5rem; } }
-          @media (max-width: 425px) {
-            .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4 p {
-              font-size: 2rem; } }
+        .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4:hover {
+          background-color: #31fac8; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4:hover p {
+            color: #013392; }
+          .article .estadisticasIndex .itemsEstadisticas .datoEstadistica4:hover .fa-calendar-check {
+            color: #013392; }
       @media (max-width: 550px) {
         .article .estadisticasIndex .itemsEstadisticas {
           grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -726,76 +798,16 @@ ol, ul {
     grid-template-rows: auto;
     grid-template-areas: ". contenedorOpinionesIndex1 contenedorOpinionesIndex2 contenedorOpinionesIndex3 .";
     align-items: center;
-    background-image: url(../images/opinionesBackground2.png);
+    background-image: url(../images/bgOpinionesSEO.jpg);
     background-position: center;
     background-size: cover;
     height: 300px; }
     .article .opinionesIndex .contenedorOpinionesIndex1 {
-      grid-area: contenedorOpinionesIndex1;
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      .article .opinionesIndex .contenedorOpinionesIndex1 .estrellas {
-        color: #fc4e03;
-        font-size: 2rem; }
-        @media (max-width: 970px) {
-          .article .opinionesIndex .contenedorOpinionesIndex1 .estrellas {
-            font-size: 1.5rem; } }
-      .article .opinionesIndex .contenedorOpinionesIndex1 p {
-        color: #fc4e03;
-        font-family: 'Staatliches', cursive;
-        letter-spacing: 2px;
-        font-size: 1.15rem;
-        text-align: center; }
-      @media (max-width: 630px) {
-        .article .opinionesIndex .contenedorOpinionesIndex1 {
-          position: relative; } }
+      grid-area: contenedorOpinionesIndex1; }
     .article .opinionesIndex .contenedorOpinionesIndex2 {
-      grid-area: contenedorOpinionesIndex2;
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      .article .opinionesIndex .contenedorOpinionesIndex2 .estrellas {
-        color: #fc4e03;
-        font-size: 2rem; }
-        @media (max-width: 970px) {
-          .article .opinionesIndex .contenedorOpinionesIndex2 .estrellas {
-            font-size: 1.5rem; } }
-      .article .opinionesIndex .contenedorOpinionesIndex2 p {
-        color: #fc4e03;
-        font-family: 'Staatliches', cursive;
-        letter-spacing: 2px;
-        font-size: 1.15rem;
-        text-align: center; }
-      @media (max-width: 630px) {
-        .article .opinionesIndex .contenedorOpinionesIndex2 {
-          position: relative; } }
+      grid-area: contenedorOpinionesIndex2; }
     .article .opinionesIndex .contenedorOpinionesIndex3 {
-      grid-area: contenedorOpinionesIndex3;
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      .article .opinionesIndex .contenedorOpinionesIndex3 .estrellas {
-        color: #fc4e03;
-        font-size: 2rem; }
-        @media (max-width: 970px) {
-          .article .opinionesIndex .contenedorOpinionesIndex3 .estrellas {
-            font-size: 1.5rem; } }
-      .article .opinionesIndex .contenedorOpinionesIndex3 p {
-        color: #fc4e03;
-        font-family: 'Staatliches', cursive;
-        letter-spacing: 2px;
-        font-size: 1.15rem;
-        text-align: center; }
-      @media (max-width: 630px) {
-        .article .opinionesIndex .contenedorOpinionesIndex3 {
-          position: relative; } }
+      grid-area: contenedorOpinionesIndex3; }
     @media (max-width: 1250px) {
       .article .opinionesIndex {
         grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr; } }
@@ -825,72 +837,18 @@ ol, ul {
           right: 0;
           background-color: rgba(0, 0, 0, 0.5); } }
   .article .infoIndex {
-    background-color: #1f2a44;
+    background-color: #013392;
     grid-area: infoIndex;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: ". contenedorInfoIndex1 ." ". contenedorInfoIndex2 ." ". contenedorInfoIndex3 ."; }
     .article .infoIndex .contenedorInfoIndex1 {
-      grid-area: contenedorInfoIndex1;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 35px 0; }
-      .article .infoIndex .contenedorInfoIndex1 img {
-        width: 50%;
-        border-radius: 20px; }
-        @media (max-width: 768px) {
-          .article .infoIndex .contenedorInfoIndex1 img {
-            margin-bottom: 35px;
-            width: 100%;
-            border-radius: 0; } }
-      .article .infoIndex .contenedorInfoIndex1 .textoInfo {
-        width: 40%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
-        .article .infoIndex .contenedorInfoIndex1 .textoInfo p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 1.15rem;
-          text-align: center;
-          color: #31fac8; }
-          @media (max-width: 768px) {
-            .article .infoIndex .contenedorInfoIndex1 .textoInfo p {
-              font-size: 1.5rem; } }
-        .article .infoIndex .contenedorInfoIndex1 .textoInfo a {
-          color: #1f2a44;
-          width: 40%;
-          height: 45px; }
-          .article .infoIndex .contenedorInfoIndex1 .textoInfo a button {
-            background-color: #31fac8;
-            color: #1f2a44;
-            border: none;
-            width: 100%;
-            height: 100%;
-            font-family: 'Staatliches', cursive;
-            letter-spacing: 2px;
-            font-size: 1.15rem;
-            transition: all ease 0.3s; }
-            .article .infoIndex .contenedorInfoIndex1 .textoInfo a button:hover {
-              background-color: #fc4e03;
-              border-radius: 25px; }
-          @media (max-width: 768px) {
-            .article .infoIndex .contenedorInfoIndex1 .textoInfo a {
-              width: 60%; } }
-        @media (max-width: 768px) {
-          .article .infoIndex .contenedorInfoIndex1 .textoInfo {
-            width: 85%; } }
-      @media (max-width: 768px) {
-        .article .infoIndex .contenedorInfoIndex1 {
-          flex-direction: column; } }
+      grid-area: contenedorInfoIndex1; }
     .article .infoIndex .contenedorInfoIndex2 {
       grid-area: contenedorInfoIndex2;
-      display: flex;
       flex-direction: row-reverse;
+      display: flex;
       justify-content: space-evenly;
       align-items: center;
       margin: 35px 0; }
@@ -904,15 +862,20 @@ ol, ul {
             border-radius: 0; } }
       .article .infoIndex .contenedorInfoIndex2 .textoInfo {
         width: 40%;
-        height: 50%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center; }
+        .article .infoIndex .contenedorInfoIndex2 .textoInfo .tituloInfo {
+          font-size: 3rem; }
+          @media (max-width: 1120px) {
+            .article .infoIndex .contenedorInfoIndex2 .textoInfo .tituloInfo {
+              font-size: 2.5rem; } }
         .article .infoIndex .contenedorInfoIndex2 .textoInfo p {
           font-family: 'Staatliches', cursive;
           letter-spacing: 2px;
-          font-size: 1.15rem;
+          font-size: 1.3rem;
           text-align: center;
           color: #31fac8; }
           @media (max-width: 768px) {
@@ -938,6 +901,9 @@ ol, ul {
           @media (max-width: 768px) {
             .article .infoIndex .contenedorInfoIndex2 .textoInfo a {
               width: 60%; } }
+        @media (max-width: 1120px) {
+          .article .infoIndex .contenedorInfoIndex2 .textoInfo {
+            width: 45%; } }
         @media (max-width: 768px) {
           .article .infoIndex .contenedorInfoIndex2 .textoInfo {
             width: 85%; } }
@@ -945,61 +911,7 @@ ol, ul {
         .article .infoIndex .contenedorInfoIndex2 {
           flex-direction: column; } }
     .article .infoIndex .contenedorInfoIndex3 {
-      grid-area: contenedorInfoIndex3;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 35px 0; }
-      .article .infoIndex .contenedorInfoIndex3 img {
-        width: 50%;
-        border-radius: 20px; }
-        @media (max-width: 768px) {
-          .article .infoIndex .contenedorInfoIndex3 img {
-            margin-bottom: 35px;
-            width: 100%;
-            border-radius: 0; } }
-      .article .infoIndex .contenedorInfoIndex3 .textoInfo {
-        width: 40%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center; }
-        .article .infoIndex .contenedorInfoIndex3 .textoInfo p {
-          font-family: 'Staatliches', cursive;
-          letter-spacing: 2px;
-          font-size: 1.15rem;
-          text-align: center;
-          color: #31fac8; }
-          @media (max-width: 768px) {
-            .article .infoIndex .contenedorInfoIndex3 .textoInfo p {
-              font-size: 1.5rem; } }
-        .article .infoIndex .contenedorInfoIndex3 .textoInfo a {
-          color: #1f2a44;
-          width: 40%;
-          height: 45px; }
-          .article .infoIndex .contenedorInfoIndex3 .textoInfo a button {
-            background-color: #31fac8;
-            color: #1f2a44;
-            border: none;
-            width: 100%;
-            height: 100%;
-            font-family: 'Staatliches', cursive;
-            letter-spacing: 2px;
-            font-size: 1.15rem;
-            transition: all ease 0.3s; }
-            .article .infoIndex .contenedorInfoIndex3 .textoInfo a button:hover {
-              background-color: #fc4e03;
-              border-radius: 25px; }
-          @media (max-width: 768px) {
-            .article .infoIndex .contenedorInfoIndex3 .textoInfo a {
-              width: 60%; } }
-        @media (max-width: 768px) {
-          .article .infoIndex .contenedorInfoIndex3 .textoInfo {
-            width: 85%; } }
-      @media (max-width: 768px) {
-        .article .infoIndex .contenedorInfoIndex3 {
-          flex-direction: column; } }
+      grid-area: contenedorInfoIndex3; }
     @media (max-width: 1440px) {
       .article .infoIndex {
         grid-template-areas: "contenedorInfoIndex1 contenedorInfoIndex1 contenedorInfoIndex1" "contenedorInfoIndex2 contenedorInfoIndex2 contenedorInfoIndex2" "contenedorInfoIndex3 contenedorInfoIndex3 contenedorInfoIndex3"; } }
@@ -1103,7 +1015,7 @@ ol, ul {
 .headerVehiculos {
   grid-area: headerVehiculos; }
   .headerVehiculos .headerImagen {
-    background-image: url(../images/backgrounds/bg19.jpg); }
+    background-image: url(../images/backgrounds/bgVehiculosSEO.jpg); }
 
 .vehiculos {
   grid-area: vehiculos;
@@ -1556,22 +1468,10 @@ ol, ul {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-size: 1.1rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  color: white; }
   .posventa .revision {
     display: flex; }
-    .posventa .revision .tituloRevision {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      padding-right: 5%;
-      font-size: 2.5rem;
-      color: #fc4e03;
-      text-align: center;
-      font-weight: bold; }
-      @media (max-width: 850px) {
-        .posventa .revision .tituloRevision {
-          padding-right: 0; } }
     .posventa .revision ul {
       display: flex;
       justify-content: space-evenly;
@@ -1590,19 +1490,6 @@ ol, ul {
   .posventa .servicio {
     display: flex;
     margin-top: 3rem; }
-    .posventa .servicio .tituloServicio {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 2.5rem;
-      padding-right: 5%;
-      color: #fc4e03;
-      font-weight: bold;
-      text-align: center; }
-      @media (max-width: 850px) {
-        .posventa .servicio .tituloServicio {
-          padding-right: 0; } }
     .posventa .servicio .textoServicio {
       display: flex;
       flex-direction: column;
@@ -1619,19 +1506,6 @@ ol, ul {
   .posventa .mantenimiento {
     display: flex;
     margin-top: 3rem; }
-    .posventa .mantenimiento .tituloMantenimiento {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      padding-right: 5%;
-      font-size: 2rem;
-      text-align: center;
-      color: #fc4e03;
-      font-weight: bold; }
-      @media (max-width: 850px) {
-        .posventa .mantenimiento .tituloMantenimiento {
-          padding-right: 0; } }
     .posventa .mantenimiento .textoMantenimiento {
       display: flex;
       flex-direction: column;
@@ -1799,7 +1673,7 @@ ol, ul {
       background-color: #31fac8; }
   .headerSobreNosotros .headerImagen {
     height: 100%;
-    background-image: url(../images/backgrounds/bg17.jpg);
+    background-image: url(../images/backgrounds/bgSobreNosotrosSEO.jpg);
     background-position: center;
     background-size: cover; }
     .headerSobreNosotros .headerImagen .textoHeaderIndex {
@@ -1945,65 +1819,13 @@ ol, ul {
       color: #31fac8;
       background-color: #1f2a44; }
   .sobreNosotros .vision {
-    grid-area: vision;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0; }
-    .sobreNosotros .vision img {
-      width: 95%;
-      height: 75%; }
-      @media (max-width: 950px) {
-        .sobreNosotros .vision img {
-          width: 100%; } }
+    grid-area: vision; }
   .sobreNosotros .empresa {
-    grid-area: empresa;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0; }
-    .sobreNosotros .empresa img {
-      width: 90%;
-      height: 75%;
-      margin-bottom: 2rem; }
-      @media (max-width: 950px) {
-        .sobreNosotros .empresa img {
-          width: 100%; } }
-      @media (max-width: 950px) {
-        .sobreNosotros .empresa img {
-          margin-bottom: 0; } }
+    grid-area: empresa; }
   .sobreNosotros .garage {
-    grid-area: garage;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0; }
-    .sobreNosotros .garage img {
-      width: 90%;
-      height: 75%;
-      margin-bottom: 2rem; }
-      @media (max-width: 950px) {
-        .sobreNosotros .garage img {
-          width: 100%; } }
-      @media (max-width: 950px) {
-        .sobreNosotros .garage img {
-          margin-bottom: 0; } }
+    grid-area: garage; }
   .sobreNosotros .distribucion {
-    grid-area: distribucion;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0; }
-    .sobreNosotros .distribucion img {
-      width: 95%;
-      height: 75%; }
-      @media (max-width: 950px) {
-        .sobreNosotros .distribucion img {
-          width: 100%; } }
+    grid-area: distribucion; }
     @media (max-width: 768px) {
       .sobreNosotros .distribucion {
         padding: 3rem 0; } }
@@ -2025,9 +1847,10 @@ ol, ul {
 .contacto {
   grid-area: contacto;
   font-family: 'Staatliches', cursive;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: white; }
   .contacto .contenedorFormulario {
-    background-color: #1f2a44; }
+    background-color: #013392; }
     .contacto .contenedorFormulario .colorLetra {
       color: #fc4e03;
       font-size: 1.25rem; }
@@ -2166,7 +1989,7 @@ ol, ul {
       background-color: #31fac8; }
   .headerContacto .headerImagen {
     height: 100%;
-    background-image: url(../images/backgrounds/bg5.jpg);
+    background-image: url(../images/backgrounds/bgContactoSEO.jpg);
     background-position: center;
     background-size: cover; }
     .headerContacto .headerImagen .textoHeaderIndex {
