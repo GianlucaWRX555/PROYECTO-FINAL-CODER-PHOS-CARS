@@ -1,0 +1,247 @@
+%ultimosVehiculosContenedor{
+    p{
+        color: $naranja;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        transition: all ease 0.3s;
+    }
+
+    &:hover{
+        p{
+            color: $phos1;
+        }
+    }
+}
+
+%contenedorSecciones{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    p{
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        color: $phos1;
+        z-index: 1;
+        transition: all ease 0.3s;
+    }
+
+    &:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover{
+        p{
+            color: $naranja;
+        }
+    }
+}
+
+%datoEstadistica{
+    border: 2px solid $naranja;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.3s;
+
+    p{
+        color: $naranja;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2px;
+        font-size: 2rem;
+
+        @media(max-width:1440px){
+            font-size: 1.5rem;
+        }
+
+        @media(max-width:425px){
+            font-size: 2rem;
+        }
+    }
+}
+
+%contenedorOpiniones{
+    height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .estrellas{
+                color: $naranja;
+                font-size: 2rem;
+
+                @media(max-width:970px){
+                    font-size: 1.5rem;
+                }
+            }
+
+            p{
+                color: $naranja;
+                font-family: 'Staatliches', cursive;
+                letter-spacing: 2px;
+                font-size: 1.15rem;
+                text-align: center;
+            }
+
+            @media(max-width:630px){
+                position: relative;
+            }
+}
+
+%contenedorInfoIndex{
+    display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 35px 0;
+
+            img{
+                width: 50%;
+                border-radius: 20px;
+
+                @media(max-width:768px){
+                    margin-bottom: 35px;
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+
+            .textoInfo{
+                width: 40%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .tituloInfo{
+                    font-size: 3rem;
+
+                    @media(max-width:1120px){
+                        font-size: 2.5rem;
+                    }
+                }
+
+                p{
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 2px;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    color: $phos1;
+
+                    @media(max-width:768px){
+                        font-size: 1.5rem;
+                    }
+                }
+
+                a{
+                    color: $azul;
+                    width: 40%;
+                    height: 45px;
+                    
+                    button{
+                        background-color: $phos1;
+                        color: $azul;
+                        border: none;
+                        width: 100%;
+                        height: 100%;
+                        font-family: 'Staatliches', cursive;
+                        letter-spacing: 2px;
+                        font-size: 1.15rem;
+                        transition: all ease 0.3s;
+
+                        &:hover{
+                            background-color: $naranja;
+                            border-radius: 25px;
+                        }
+                    }
+
+                    @media(max-width:768px){
+                        width: 60%;
+                    }
+                }
+
+                @media(max-width:1120px){
+                    width: 45%;
+                }
+
+                @media(max-width:768px){
+                    width: 85%;
+                }
+            }
+
+            @media(max-width:768px){
+                flex-direction: column;
+            }
+}
+
+%tituloPosventa{
+    display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-right: 5%;
+            font-size: 2.5rem;
+            color: $naranja;
+            text-align: center;
+            font-weight: bold;
+
+            @media(max-width:850px){
+                padding-right: 0;
+            }
+}
+
+%contenedorVisionDistribucion{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+
+        img{
+            width: 95%;
+            height: 75%;
+
+            @media(max-width:950px){
+                width: 100%;
+            }
+        }
+}
+
+%contenedorEmpresaGarage{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+
+        img{
+            width: 90%;
+            height: 75%;
+            margin-bottom: 2rem;
+
+            @media(max-width:950px){
+                width: 100%;
+            }
+
+            @media(max-width:950px){
+                margin-bottom: 0;
+            }
+        }
+}
