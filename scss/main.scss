@@ -24,6 +24,7 @@ ol, ul {
 @import './variables/colores';
 @import './variables/botones';
 @import './variables/body';
+@import './variables/headerStyle';
 
 
 //Importaciones
@@ -35,6 +36,9 @@ ol, ul {
 @import './header-footer/footer';
 
 //Vehiculos
+@import './grid/gridVehiculos';
+@import './header-footer/headerVehiculos';
+@import './secciones/vehiculos';
 
 //Posventa
 @import './grid/gridPosventa';

@@ -1,0 +1,244 @@
+%headerComun{
+    .headerPrincipal{
+        width: 100%;
+        height: 115px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: $naranja 2px solid;
+        position: absolute;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            transition: all ease 0.15s;
+            li{
+                list-style: none;
+
+                .nav-link{
+                    color: white;
+                    display: inline!important;
+                    transition: all ease 0.15s;
+
+                    @media (min-width: 768px){
+                        padding: 15px 20px;
+                    }
+
+                    &:hover{
+                        color: $phos1;
+
+                        @media(max-width:767px){
+                            color: $naranja;
+                        }
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    transition: all ease 0.15s;
+                    font-family: 'Staatliches', cursive;
+                    letter-spacing: 1px;
+                    font-size: 1.25rem;
+
+                    &:hover{
+                        border-bottom: 5px $phos1 solid;
+                        color: $naranja;
+                    }
+
+                    @media(max-width:767px){
+                        font-size: 2rem;
+                    }
+                }
+
+                @media(max-width:767px){
+                       padding: 20px 0; 
+                }
+            }
+        }
+
+        @media(max-width:767px){
+            .navbar-nav{
+                align-items: center;
+            }
+        }
+
+        .headerInfo{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            color: $phos1;
+            
+            .fas{
+                color: $naranja;
+                font-size: 20px;
+            }
+        }
+
+        @media(max-width:950px){
+            .disabled{
+                display: none;
+            }
+        }
+        
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+
+
+        @media(max-width:767px){
+            .navbar-collapse{
+                background-color: #31fac8;
+                z-index: 2;
+            }
+        }
+
+        @media(max-width:425px){
+            z-index: 1;
+        }
+
+        .navbar-toggler {
+            background-color: $phos1;
+        }
+    }
+
+    .headerImagen{
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+
+        .textoHeaderIndex{
+            color: white;
+            width: 45%;
+            height: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            position: relative;
+            top: 20%;
+            left: 10%;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 3px;
+
+            p{
+                font-size: 1.75rem;
+
+                @media(max-width:767px){
+                    font-size: 1.5rem;
+                }
+
+                @media(max-width:424px){
+                    font-size: 1.25rem;
+                }
+            }
+
+            a{
+                height: 10%;
+                width: 45%;
+                
+                button{
+                    height: 100%;
+                    width: 100%;
+                    background-color: $phos1;
+                    border: none;
+                    color: $azul;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    letter-spacing: 3px;
+                    font-family: 'Staatliches', cursive;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer ;
+                    &:hover{
+                        background-color: $naranja;
+                    }
+
+                    @media(max-width:424px){
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+
+            .tituloTextoHeaderIndex{
+                p{
+                    font-size: 6.5rem;
+
+                    @media(max-width:1900px){
+                        font-size: 5.5rem;
+                    }
+
+                    @media(max-width:1600px){
+                        font-size: 5rem;
+                    }
+
+                    @media(max-width:812px){
+                        font-size: 4rem;
+                    }
+
+                    @media(max-width:424px){
+                        font-size: 3.75rem;
+                    }
+                }
+
+                .legendario{
+                    color: $phos1;
+                }
+            }
+
+            @media(max-width:1440px){
+                width: 50%;
+                height: 75%;
+            }
+
+            @media(max-width:1300px){
+                width: 65%;
+                height: 75%;
+            }
+
+            @media(max-width:865px){
+                width: 80%;
+                height: 75%;
+            }
+
+            @media(max-width:424px){
+                left: 5%;
+                width: 90%;
+                height: 75%;
+            }
+
+            @media(max-width:340px){
+                left: 2%;
+                width: 96%;
+                height: 75%;
+            }
+        }
+
+        @media(max-width:1024px){
+            background-position: -280px;
+        }
+
+        @media(max-width:768px){
+            background-position: -450px;
+        }
+
+        @media(max-width:425px){
+            background-image: url(../images/phoneBackground.jpg);
+            position: relative;
+            background-position: center;
+
+            &:before {
+                content:'';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

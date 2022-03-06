@@ -1,0 +1,9 @@
+.headerVehiculos{
+    grid-area: headerVehiculos;
+
+    @extend %headerComun;
+
+    .headerImagen{
+        background-image: url(../images/backgrounds/bg19.jpg);
+    }
+}

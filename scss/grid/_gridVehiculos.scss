@@ -1,0 +1,34 @@
+.contenedorGridVehiculos{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 100vh 75px auto auto;
+    grid-template-areas: 
+    "headerVehiculos headerVehiculos headerVehiculos"
+    "headerSec headerSec headerSec"
+    ". vehiculos ."
+    "footer footer footer"
+    ;
+
+    @media(max-width:1440px){
+        grid-template-columns: 0.05fr 1fr 0.05fr;
+    }
+
+    @media(max-width:1350px){
+        grid-template-columns: 0.01fr 1fr 0.01fr;
+    }
+
+    @media(max-width:650px){
+        grid-template-columns: 0.05fr 1fr 0.05fr;
+    }
+
+    @media(max-width:425px){
+        grid-template-columns:  1fr ;
+        grid-template-areas: 
+        "headerVehiculos headerVehiculos headerVehiculos"
+        "headerSec headerSec headerSec"
+        "vehiculos vehiculos vehiculos"
+        "footer footer footer"
+        ;
+    }
+
+}
