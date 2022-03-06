@@ -30,6 +30,181 @@ ol, ul {
   100% {
     background-position: 0% 50%; } }
 
+.headerVehiculos .headerPrincipal {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: #fc4e03 2px solid;
+  position: absolute; }
+  .headerVehiculos .headerPrincipal ul {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all ease 0.15s; }
+    .headerVehiculos .headerPrincipal ul li {
+      list-style: none; }
+      .headerVehiculos .headerPrincipal ul li .nav-link {
+        color: white;
+        display: inline !important;
+        transition: all ease 0.15s; }
+        @media (min-width: 768px) {
+          .headerVehiculos .headerPrincipal ul li .nav-link {
+            padding: 15px 20px; } }
+        .headerVehiculos .headerPrincipal ul li .nav-link:hover {
+          color: #31fac8; }
+          @media (max-width: 767px) {
+            .headerVehiculos .headerPrincipal ul li .nav-link:hover {
+              color: #fc4e03; } }
+      .headerVehiculos .headerPrincipal ul li a {
+        text-decoration: none;
+        padding: 15px 20px;
+        transition: all ease 0.15s;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 1px;
+        font-size: 1.25rem; }
+        .headerVehiculos .headerPrincipal ul li a:hover {
+          border-bottom: 5px #31fac8 solid;
+          color: #fc4e03; }
+        @media (max-width: 767px) {
+          .headerVehiculos .headerPrincipal ul li a {
+            font-size: 2rem; } }
+      @media (max-width: 767px) {
+        .headerVehiculos .headerPrincipal ul li {
+          padding: 20px 0; } }
+  @media (max-width: 767px) {
+    .headerVehiculos .headerPrincipal .navbar-nav {
+      align-items: center; } }
+  .headerVehiculos .headerPrincipal .headerInfo {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #31fac8; }
+    .headerVehiculos .headerPrincipal .headerInfo .fas {
+      color: #fc4e03;
+      font-size: 20px; }
+  @media (max-width: 950px) {
+    .headerVehiculos .headerPrincipal .disabled {
+      display: none; } }
+  .headerVehiculos .headerPrincipal .navbar-collapse {
+    flex-grow: 0; }
+  @media (max-width: 767px) {
+    .headerVehiculos .headerPrincipal .navbar-collapse {
+      background-color: #31fac8;
+      z-index: 2; } }
+  @media (max-width: 425px) {
+    .headerVehiculos .headerPrincipal {
+      z-index: 1; } }
+  .headerVehiculos .headerPrincipal .navbar-toggler {
+    background-color: #31fac8; }
+
+.headerVehiculos .headerImagen {
+  height: 100%;
+  background-position: center;
+  background-size: cover; }
+  .headerVehiculos .headerImagen .textoHeaderIndex {
+    color: white;
+    width: 45%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px; }
+    .headerVehiculos .headerImagen .textoHeaderIndex p {
+      font-size: 1.75rem; }
+      @media (max-width: 767px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex p {
+          font-size: 1.5rem; } }
+      @media (max-width: 424px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex p {
+          font-size: 1.25rem; } }
+    .headerVehiculos .headerImagen .textoHeaderIndex a {
+      height: 10%;
+      width: 45%; }
+      .headerVehiculos .headerImagen .textoHeaderIndex a button {
+        height: 100%;
+        width: 100%;
+        background-color: #31fac8;
+        border: none;
+        color: #1f2a44;
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        font-family: 'Staatliches', cursive;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        .headerVehiculos .headerImagen .textoHeaderIndex a button:hover {
+          background-color: #fc4e03; }
+        @media (max-width: 424px) {
+          .headerVehiculos .headerImagen .textoHeaderIndex a button {
+            font-size: 1.25rem; } }
+    .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+      font-size: 6.5rem; }
+      @media (max-width: 1900px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+          font-size: 5.5rem; } }
+      @media (max-width: 1600px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+          font-size: 5rem; } }
+      @media (max-width: 812px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+          font-size: 4rem; } }
+      @media (max-width: 424px) {
+        .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex p {
+          font-size: 3.75rem; } }
+    .headerVehiculos .headerImagen .textoHeaderIndex .tituloTextoHeaderIndex .legendario {
+      color: #31fac8; }
+    @media (max-width: 1440px) {
+      .headerVehiculos .headerImagen .textoHeaderIndex {
+        width: 50%;
+        height: 75%; } }
+    @media (max-width: 1300px) {
+      .headerVehiculos .headerImagen .textoHeaderIndex {
+        width: 65%;
+        height: 75%; } }
+    @media (max-width: 865px) {
+      .headerVehiculos .headerImagen .textoHeaderIndex {
+        width: 80%;
+        height: 75%; } }
+    @media (max-width: 424px) {
+      .headerVehiculos .headerImagen .textoHeaderIndex {
+        left: 5%;
+        width: 90%;
+        height: 75%; } }
+    @media (max-width: 340px) {
+      .headerVehiculos .headerImagen .textoHeaderIndex {
+        left: 2%;
+        width: 96%;
+        height: 75%; } }
+  @media (max-width: 1024px) {
+    .headerVehiculos .headerImagen {
+      background-position: -280px; } }
+  @media (max-width: 768px) {
+    .headerVehiculos .headerImagen {
+      background-position: -450px; } }
+  @media (max-width: 425px) {
+    .headerVehiculos .headerImagen {
+      background-image: url(../images/phoneBackground.jpg);
+      position: relative;
+      background-position: center; }
+      .headerVehiculos .headerImagen:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); } }
+
 .contenedorGrid {
   display: grid;
   grid-template-columns: 0.25fr 1fr 0.25fr;
@@ -215,7 +390,7 @@ ol, ul {
   font-size: 1.3rem;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 2; }
   .headerSec .bienvenidos {
     color: #1f2a44;
     text-decoration: none; }
@@ -905,6 +1080,291 @@ ol, ul {
     @media (max-width: 320px) {
       .footer .copyright {
         text-align: center; } }
+
+.contenedorGridVehiculos {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 100vh 75px auto auto;
+  grid-template-areas: "headerVehiculos headerVehiculos headerVehiculos" "headerSec headerSec headerSec" ". vehiculos ." "footer footer footer"; }
+  @media (max-width: 1440px) {
+    .contenedorGridVehiculos {
+      grid-template-columns: 0.05fr 1fr 0.05fr; } }
+  @media (max-width: 1350px) {
+    .contenedorGridVehiculos {
+      grid-template-columns: 0.01fr 1fr 0.01fr; } }
+  @media (max-width: 650px) {
+    .contenedorGridVehiculos {
+      grid-template-columns: 0.05fr 1fr 0.05fr; } }
+  @media (max-width: 425px) {
+    .contenedorGridVehiculos {
+      grid-template-columns: 1fr;
+      grid-template-areas: "headerVehiculos headerVehiculos headerVehiculos" "headerSec headerSec headerSec" "vehiculos vehiculos vehiculos" "footer footer footer"; } }
+
+.headerVehiculos {
+  grid-area: headerVehiculos; }
+  .headerVehiculos .headerImagen {
+    background-image: url(../images/backgrounds/bg19.jpg); }
+
+.vehiculos {
+  grid-area: vehiculos;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "v1 v2 v3" "v4 v5 v6";
+  column-gap: 2rem;
+  row-gap: 5rem;
+  margin: 4rem 0;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0.5px; }
+  .vehiculos .disabled {
+    display: none; }
+    @media (max-width: 650px) {
+      .vehiculos .disabled {
+        display: inline-block;
+        width: 55%; } }
+  @media (max-width: 650px) {
+    .vehiculos .non-disabled {
+      display: none; } }
+  .vehiculos .background {
+    background-color: #013392;
+    transition: all ease 0.5s; }
+    .vehiculos .background:hover {
+      background-color: #3f5efb; }
+    .vehiculos .background:hover .texto {
+      color: #31fac8; }
+    .vehiculos .background:hover .titulo {
+      color: #fc4e03; }
+    .vehiculos .background:hover .precio {
+      color: #31fac8; }
+    @media (max-width: 650px) {
+      .vehiculos .background:hover .texto2 {
+        background-color: #013392 !important; }
+        .vehiculos .background:hover .texto2 .texto {
+          color: #fc4e03; }
+        .vehiculos .background:hover .texto2 .fa-solid {
+          color: #fc4e03; } }
+  .vehiculos .v1 {
+    grid-area: v1; }
+  .vehiculos .v2 {
+    grid-area: v2; }
+  .vehiculos .v3 {
+    grid-area: v3; }
+  .vehiculos .v4 {
+    grid-area: v4; }
+  .vehiculos .v5 {
+    grid-area: v5; }
+  .vehiculos .v6 {
+    grid-area: v6; }
+  .vehiculos .borde {
+    border-radius: 50px; }
+    @media (max-width: 425px) {
+      .vehiculos .borde {
+        border-radius: 0; } }
+  .vehiculos .contenedorVehiculo {
+    height: 22rem;
+    cursor: pointer; }
+    .vehiculos .contenedorVehiculo .textoVehiculo {
+      height: 100%;
+      width: 90%; }
+      .vehiculos .contenedorVehiculo .textoVehiculo .texto1 {
+        position: relative;
+        top: 1.5rem; }
+        @media (max-width: 800px) {
+          .vehiculos .contenedorVehiculo .textoVehiculo .texto1 {
+            top: 1rem; } }
+      .vehiculos .contenedorVehiculo .textoVehiculo .texto2 {
+        position: relative;
+        top: 2rem;
+        width: 90%;
+        flex-direction: row; }
+        @media (max-width: 650px) {
+          .vehiculos .contenedorVehiculo .textoVehiculo .texto2 .columna1 {
+            padding-left: 5%; } }
+        .vehiculos .contenedorVehiculo .textoVehiculo .texto2 .columna2 {
+          text-align: right; }
+          @media (max-width: 650px) {
+            .vehiculos .contenedorVehiculo .textoVehiculo .texto2 .columna2 {
+              padding-right: 5%; } }
+        @media (max-width: 650px) {
+          .vehiculos .contenedorVehiculo .textoVehiculo .texto2 {
+            padding: 3rem 0 0.5rem 0;
+            background-color: #3f5efb;
+            width: 100%;
+            border-radius: 50px;
+            top: 0; } }
+        @media (max-width: 425px) {
+          .vehiculos .contenedorVehiculo .textoVehiculo .texto2 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px; } }
+      @media (max-width: 1700px) {
+        .vehiculos .contenedorVehiculo .textoVehiculo {
+          width: 100%; } }
+      @media (max-width: 1260px) {
+        .vehiculos .contenedorVehiculo .textoVehiculo {
+          width: 90%; } }
+      @media (max-width: 1150px) {
+        .vehiculos .contenedorVehiculo .textoVehiculo {
+          width: 100%; } }
+    @media (max-width: 1600px) {
+      .vehiculos .contenedorVehiculo {
+        height: 20rem; } }
+    @media (max-width: 1260px) {
+      .vehiculos .contenedorVehiculo {
+        height: 25rem; } }
+    @media (max-width: 1150px) {
+      .vehiculos .contenedorVehiculo {
+        height: 23rem; } }
+    @media (max-width: 950px) {
+      .vehiculos .contenedorVehiculo {
+        height: 22rem; } }
+    @media (max-width: 900px) {
+      .vehiculos .contenedorVehiculo {
+        height: 20rem; } }
+    @media (max-width: 800px) {
+      .vehiculos .contenedorVehiculo {
+        height: 18rem; } }
+    @media (max-width: 700px) {
+      .vehiculos .contenedorVehiculo {
+        height: 16rem; } }
+    @media (max-width: 650px) {
+      .vehiculos .contenedorVehiculo {
+        height: 25rem; } }
+    @media (max-width: 630px) {
+      .vehiculos .contenedorVehiculo {
+        height: 24rem; } }
+    @media (max-width: 570px) {
+      .vehiculos .contenedorVehiculo {
+        height: 23rem; } }
+    @media (max-width: 500px) {
+      .vehiculos .contenedorVehiculo {
+        height: 21rem; } }
+    @media (max-width: 380px) {
+      .vehiculos .contenedorVehiculo {
+        height: 19.5rem; } }
+    @media (max-width: 330px) {
+      .vehiculos .contenedorVehiculo {
+        height: 18.5rem; } }
+  .vehiculos .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .vehiculos .between {
+    justify-content: space-between; }
+  .vehiculos .around {
+    justify-content: space-around; }
+  .vehiculos .evenly {
+    justify-content: space-evenly; }
+  .vehiculos img {
+    position: relative;
+    top: 3rem; }
+    @media (max-width: 1600px) {
+      .vehiculos img {
+        width: 80%; } }
+    @media (max-width: 650px) {
+      .vehiculos img {
+        z-index: 1; } }
+    @media (max-width: 425px) {
+      .vehiculos img {
+        width: 100%; } }
+  .vehiculos .titulo {
+    font-size: 2.5rem;
+    color: #31fac8; }
+  .vehiculos .precio {
+    font-size: 1.75rem;
+    color: #fc4e03; }
+  .vehiculos .texto {
+    font-size: 1.5rem;
+    color: #fc4e03; }
+    @media (max-width: 1550px) {
+      .vehiculos .texto {
+        font-size: 1.4rem; } }
+    @media (max-width: 1260px) {
+      .vehiculos .texto {
+        font-size: 1.6rem; } }
+    @media (max-width: 900px) {
+      .vehiculos .texto {
+        font-size: 1.5rem; } }
+    @media (max-width: 850px) {
+      .vehiculos .texto {
+        font-size: 1.4rem; } }
+    @media (max-width: 800px) {
+      .vehiculos .texto {
+        font-size: 1.3rem; } }
+    @media (max-width: 760px) {
+      .vehiculos .texto {
+        font-size: 1.1rem; } }
+    @media (max-width: 650px) {
+      .vehiculos .texto {
+        font-size: 1.6rem; } }
+    @media (max-width: 465px) {
+      .vehiculos .texto {
+        font-size: 1.4rem; } }
+    @media (max-width: 380px) {
+      .vehiculos .texto {
+        font-size: 1.2rem; } }
+    @media (max-width: 340px) {
+      .vehiculos .texto {
+        font-size: 1.1rem; } }
+  .vehiculos .fa-solid {
+    color: #31fac8;
+    padding-right: 0.4rem; }
+  .vehiculos .imagen-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%; }
+  .vehiculos .fa-circle-plus {
+    position: relative;
+    top: 1.25rem;
+    font-size: 3rem; }
+    .vehiculos .fa-circle-plus:hover {
+      color: #fc4e03; }
+      @media (max-width: 650px) {
+        .vehiculos .fa-circle-plus:hover {
+          background-color: #31fac8; } }
+    @media (max-width: 768px) {
+      .vehiculos .fa-circle-plus {
+        font-size: 2.5rem; } }
+    @media (max-width: 650px) {
+      .vehiculos .fa-circle-plus {
+        top: -20rem;
+        left: -2rem;
+        font-size: 3rem;
+        background-color: #fc4e03;
+        border-radius: 80%;
+        padding-right: 0; } }
+    @media (max-width: 500px) {
+      .vehiculos .fa-circle-plus {
+        top: -18.25rem; } }
+    @media (max-width: 500px) {
+      .vehiculos .fa-circle-plus {
+        top: -18.25rem; } }
+    @media (max-width: 425px) {
+      .vehiculos .fa-circle-plus {
+        font-size: 2.5rem; } }
+    @media (max-width: 380px) {
+      .vehiculos .fa-circle-plus {
+        top: -15rem; } }
+    @media (max-width: 330px) {
+      .vehiculos .fa-circle-plus {
+        top: -13rem;
+        left: -1rem; } }
+  @media (max-width: 1600px) {
+    .vehiculos {
+      margin: 3.5rem 0; } }
+  @media (max-width: 1260px) {
+    .vehiculos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "v1 v2" "v3 v4" "v5 v6"; } }
+  @media (max-width: 650px) {
+    .vehiculos {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas: "v1" "v2" "v3" "v4" "v5" "v6"; } }
 
 .contenedorGridPosventa {
   display: grid;
