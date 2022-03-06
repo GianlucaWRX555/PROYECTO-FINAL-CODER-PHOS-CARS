@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #efefef;
+    background-color: #1f2a44;
 }
 
 dl, ol, ul {
@@ -25,6 +25,7 @@ ol, ul {
 @import './variables/botones';
 @import './variables/body';
 @import './variables/headerStyle';
+@import './variables/extend';
 
 
 //Importaciones
